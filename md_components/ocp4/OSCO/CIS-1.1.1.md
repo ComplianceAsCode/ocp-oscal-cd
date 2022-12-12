@@ -20,11 +20,10 @@ ______________________________________________________________________
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
 <!-- Enter possible prose for implementation response at the control level here, after this comment -->
-Test.
 ### Rules:
 
   - file_permissions_kube_apiserver
 
-### Implementation Status: partial
+### Implementation Status: planned
 
 ______________________________________________________________________

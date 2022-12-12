@@ -3,7 +3,7 @@
     "uuid": "d8b863b7-580b-490c-981f-cd44adbc3c61",
     "metadata": {
       "title": "Component definition for CIS Red Hat OpenShift Container Platform 4 Benchmark profiles",
-      "last-modified": "2022-10-14T09:28:40.389553+00:00",
+      "last-modified": "2022-12-12T02:48:11.047984+00:00",
       "version": "0.1.1",
       "oscal-version": "1.0.2"
     },
@@ -1186,7 +1186,7 @@
               {
                 "uuid": "ff76b1d2-3bc9-43ad-813c-bd16a2078972",
                 "control-id": "CIS-1.1.1",
-                "description": "Test.",
+                "description": "",
                 "props": [
                   {
                     "name": "Rule_Id",
@@ -1196,7 +1196,7 @@
                   },
                   {
                     "name": "implementation-status",
-                    "value": "partial"
+                    "value": "planned"
                   }
                 ]
               },
@@ -2025,7 +2025,7 @@
               {
                 "uuid": "9dbb5a76-27d6-40ff-8da4-24d8fe5c5f96",
                 "control-id": "CIS-1.4.1",
-                "description": "Add control implementation description here for control CIS-1.4.1",
+                "description": "",
                 "props": [
                   {
                     "name": "implementation-status",
@@ -2036,7 +2036,7 @@
               {
                 "uuid": "f73dc270-50e1-43ca-87dd-46459b02f68d",
                 "control-id": "CIS-3.2.1",
-                "description": "Add control implementation description here for control CIS-3.2.1",
+                "description": "",
                 "props": [
                   {
                     "name": "implementation-status",
