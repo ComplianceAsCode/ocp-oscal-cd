@@ -1,0 +1,33 @@
+{
+  "profile": {
+    "uuid": "14f9efd9-5636-428e-8c62-4a558fdf11de",
+    "metadata": {
+      "title": "ROKS OCP4 Tailored Profile",
+      "last-modified": "2022-09-19T03:18:55.771601+00:00",
+      "version": "1.0",
+      "oscal-version": "1.0.2"
+    },
+    "imports": [
+      {
+        "href": "profiles/OCP4_CIS_NODE/profile.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "CIS-1.1.10",
+              "CIS-1.1.9",
+              "CIS-2.7",
+              "CIS-4.1.5",
+              "CIS-4.1.6",
+              "CIS-4.1.7",
+              "CIS-4.1.8",
+              "CIS-4.2.6"
+            ]
+          }
+        ]
+      }
+    ],
+    "modify": {
+      "alters": []
+    }
+  }
+}

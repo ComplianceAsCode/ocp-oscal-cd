@@ -1,0 +1,29 @@
+---
+x-trestle-comp-def-rules:
+  - name: api_server_bind_address
+    description: Ensure that the --secure-port argument is not set to 0
+x-trestle-global:
+  profile-title: OCP4 CIS Profile
+---
+
+# CIS-1.2.20 - \[\] 1.2.20 Ensure that the --secure-port argument is not set to 0
+
+## Control Statement
+
+______________________________________________________________________
+
+## What is the solution and how is it implemented?
+
+<!-- For implementation status enter one of: implemented, partial, planned, alternative, not-applicable -->
+
+<!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
+
+<!-- Enter possible prose for implementation response at the control level here, after this comment -->
+
+### Rules:
+
+  - api_server_bind_address
+
+### Implementation Status: planned
+
+______________________________________________________________________
