@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.1 (2022-12-13)
+### Fix
+* Updated codeowners ([#6](https://github.com/ComplianceAsCode/ocp-oscal-cd/issues/6)) ([`18fe4fd`](https://github.com/ComplianceAsCode/ocp-oscal-cd/commit/18fe4fdd7b634cb481a69b554dfa842164b92afb))
+
 ## v0.1.0 (2022-12-12)
 ### Feature
 * Add git actions ([`b5eda25`](https://github.com/ComplianceAsCode/ocp-oscal-cd/commit/b5eda25cc6c36fcf1cd8d91ca6c8f3e293ea71e6))
