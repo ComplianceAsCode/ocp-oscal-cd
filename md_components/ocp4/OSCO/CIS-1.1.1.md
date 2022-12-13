@@ -25,6 +25,6 @@ ______________________________________________________________________
 
   - file_permissions_kube_apiserver
 
-### Implementation Status: planned
+### Implementation Status: implemented
 
 ______________________________________________________________________
