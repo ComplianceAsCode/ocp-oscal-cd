@@ -3,8 +3,8 @@
     "uuid": "14f9efd9-5636-428e-8c62-4a558fdf11de",
     "metadata": {
       "title": "ROKS OCP4 Tailored Profile",
-      "last-modified": "2022-12-11T02:55:01.649927+00:00",
-      "version": "0.1.0",
+      "last-modified": "2022-12-13T08:14:24.260576+00:00",
+      "version": "0.1.2",
       "oscal-version": "1.0.2"
     },
     "imports": [
