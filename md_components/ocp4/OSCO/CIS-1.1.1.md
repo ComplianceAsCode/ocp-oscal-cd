@@ -11,6 +11,8 @@ x-trestle-global:
 
 ## Control Statement
 
+The organization defines
+
 ______________________________________________________________________
 
 ## What is the solution and how is it implemented?
