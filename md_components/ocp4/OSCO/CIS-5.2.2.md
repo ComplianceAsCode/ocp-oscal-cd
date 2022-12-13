@@ -19,8 +19,6 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-<!-- Enter possible prose for implementation response at the control level here, after this comment -->
-
 ### Rules:
 
   - scc_limit_process_id_namespace

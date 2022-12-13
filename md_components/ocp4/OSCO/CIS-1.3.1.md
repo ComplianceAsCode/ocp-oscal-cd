@@ -36,8 +36,6 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-<!-- Enter possible prose for implementation response at the control level here, after this comment -->
-
 ### Rules:
 
   - kubelet_eviction_thresholds_set_soft_memory_available
