@@ -15,11 +15,15 @@
 """Create ocp4.csv from CIS benchmarks file(s)."""
 import argparse
 import datetime
+import json
 import logging
 import pathlib
+from typing import List
 
 from utils.cis_utils import CisOscalCatalogHelper, CisProfileHelper
 from utils.csv_utils import CsvHelper
+
+FILE_ENCODING = 'utf8'
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname).1s %(message)s', datefmt='%Y/%m/%d %H:%M:%S')
 logger = logging.getLogger(__name__)
@@ -34,17 +38,23 @@ column_names = [
     'Component_Type',
     'Control_Mappings',
     'Resource',
+    'Check_Id',
+    'Check_Description',
     'Parameter_Id',
     'Parameter_Description',
     'Parameter_Default_Value',
     'Parameter_Value_Alternatives'
 ]
 
-default_component_type = 'Service'
-default_resource = 'OSCO'
-default_rule_prefix = ''
-default_rule_prefix_help = 'None'
+service_component_type = 'Service'
+service_resource = 'OCP4'
+service_rule_prefix = ''
+service_rule_prefix_help = 'None'
 
+validation_component_type = 'Validator'
+validation_resource = 'OSCO'
+validation_rule_prefix = ''
+validation_rule_prefix_help = 'None'
 
 class Mainline:
     """Main."""
@@ -83,22 +93,29 @@ class Mainline:
             '--component-type',
             type=str,
             required=False,
-            default=f'{default_component_type}',
-            help=f'component type, default = {default_component_type}'
+            default=f'{service_component_type}',
+            help=f'component type, default = {service_component_type}'
         )
         parser.add_argument(
             '--resource',
             type=str,
             required=False,
-            default=f'{default_resource}',
-            help=f'resource, default = {default_resource}'
+            default=f'{service_resource}',
+            help=f'resource, default = {service_resource}'
         )
         parser.add_argument(
             '--rule-prefix',
             type=str,
             required=False,
-            default=f'{default_rule_prefix}',
-            help=f'rule-prefix, default = {default_rule_prefix_help}'
+            default=f'{service_rule_prefix}',
+            help=f'rule-prefix, default = {service_rule_prefix_help}'
+        )
+        parser.add_argument(
+            '--rule-to-parameters-map',
+            type=str,
+            required=False,
+            default=None,
+            help=f'rule-to-parameters-map, default = None'
         )
         args = parser.parse_args()
         return args
@@ -110,7 +127,30 @@ class Mainline:
                 rval = True
                 break
         return rval
-
+    
+    def _get_parameters_map(self, rule_to_parameters_map: str) -> List[str]:
+        """Get parameters map."""
+        parameters_map = {}
+        if rule_to_parameters_map is not None:
+            fp = pathlib.Path(rule_to_parameters_map)
+            f = fp.open('r', encoding=FILE_ENCODING)
+            jdata = json.load(f)
+            parameters_map = jdata
+            f.close()
+        return parameters_map
+    
+    def _get_set_parameter(self, rule: str) -> tuple:
+        """Get set parameter."""
+        set_parameter = ('', '', '', '')
+        for key in self._rule_to_parm_map.keys():
+            if key == rule:
+                value = self._rule_to_parm_map[key]
+                remarks = value['description']
+                options = value['options']
+                default_value = options['default']
+                set_parameter = (rule, remarks, default_value, options)
+        return set_parameter
+    
     def run(self) -> None:
         """Run."""
         args = self.parse()
@@ -135,8 +175,10 @@ class Mainline:
         opath = pathlib.Path(args.output)
         if not opath.is_dir():
             opath.mkdir(parents=True, exist_ok=True)
-        # process
+        # rule-to-parameters-map
+        self._rule_to_parm_map = self._get_parameters_map(args.rule_to_parameters_map)
         rows = []
+        # process - service
         for profile_helper in self.profile_helpers:
             for cis_node in profile_helper.node_generator():
                 if cis_node.rules is not None:
@@ -145,7 +187,9 @@ class Mainline:
                         logger.info(f'skip: {control_id}')
                         continue
                     for rule in cis_node.rules:
-                        rule_id = f'{args.rule_prefix}{rule.strip()}'
+                        rule = rule.strip()
+                        sp = self._get_set_parameter(rule)
+                        rule_id = f'{args.rule_prefix}{rule}'
                         row = [
                             f'{rule_id}',
                             f'{cis_node.description}',
@@ -156,8 +200,41 @@ class Mainline:
                             f'{args.resource}',
                             '',
                             '',
-                            '',
-                            ''
+                            sp[0],
+                            sp[1],
+                            sp[2],
+                            sp[3]
+                        ]
+                        rows.append(row)
+        # process - validator
+        for profile_helper in self.profile_helpers:
+            for cis_node in profile_helper.node_generator():
+                if cis_node.rules is not None:
+                    control_id = f'CIS-{cis_node.name}'
+                    if not self._is_included(control_id):
+                        logger.info(f'skip: {control_id}')
+                        continue
+                    for rule in cis_node.rules:
+                        rule = rule.strip()
+                        sp = self._get_set_parameter(rule)
+                        rule_id = f'{args.rule_prefix}{rule}'
+                        check_id = rule_id
+                        check_description = cis_node.description
+                        check_description = check_description.replace('Ensure', 'Check')
+                        row = [
+                            f'{rule_id}',
+                            f'{cis_node.description}',
+                            f'{profile_helper.get_url()}',
+                            f'{profile_helper.get_description()}',
+                            f'{validation_component_type}',
+                            f'{control_id}',
+                            f'{validation_resource}',
+                            f'{check_id}',
+                            f'{check_description}',
+                            sp[0],
+                            sp[1],
+                            sp[2],
+                            sp[3]
                         ]
                         rows.append(row)
         # write csv
