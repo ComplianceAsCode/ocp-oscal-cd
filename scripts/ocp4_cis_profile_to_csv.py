@@ -148,7 +148,7 @@ class Mainline:
                 remarks = value['description']
                 options = value['options']
                 default_value = options['default']
-                set_parameter = (rule, remarks, default_value, options)
+                set_parameter = (f'var_{rule}', remarks, default_value, options)
         return set_parameter
     
     def run(self) -> None:
