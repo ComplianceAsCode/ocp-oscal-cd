@@ -31,30 +31,55 @@ logger = logging.getLogger(__name__)
 timestamp = datetime.datetime.utcnow().replace(microsecond=0).replace(tzinfo=datetime.timezone.utc).isoformat()
 
 column_names = [
-    'Rule_Id',
-    'Rule_Description',
-    'Profile_Reference_URL',
-    'Profile_Description',
-    'Component_Type',
-    'Control_Mappings',
-    'Resource',
+    '$$Component_Title',
+    '$$Component_Description',
+    '$$Component_Type',
+    '$$Rule_Id',
+    '$$Rule_Description',
+    '$Parameter_Id',
+    '$Parameter_Description',
+    '$Parameter_Value_Alternatives',
+    '$Parameter_Value_Default',
+    '$$Profile_Source',
+    '$$Profile_Description',
+    '$$Control_Id_List',
     'Check_Id',
     'Check_Description',
-    'Parameter_Id',
-    'Parameter_Description',
-    'Parameter_Default_Value',
-    'Parameter_Value_Alternatives'
+    '$$Namespace',
 ]
 
-service_component_type = 'Service'
-service_resource = 'OCP4'
+column_descriptions = [
+    'A human readable name for the component.',
+    'A description of the component including information about its function.',
+    'A category describing the purpose of the component. ALLOWED VALUES interconnection:software:hardware:service:physical:process-procedure:plan:guidance:standard:validation',
+    'A textual label that uniquely identifies a policy (desired state) that can be used to reference it elsewhere in this or other documents.',
+    'A description of the policy (desired state) including information about its purpose and scope.',
+    'A textual label that uniquely identifies the parameter associated with that policy (desired state) or controls implemented by the policy (desired state).',
+    'A description of the parameter including the purpose and use of the parameter.',
+    'ONLY for the policy (desired state) parameters: A value or set of values the parameter can take. The catalog parameters values are defined in the catalog. ',
+    'A value recommended by Compliance Team in this profile for the parameter of the control or policy (desired state). If a CIS-benchmark exists, the default default could be the CIS-benchmark recommended value.',
+    'A URL reference to the source catalog or profile for which this component is implementing controls for. A profile designates a selection and configuration of controls from one or more catalogs.',
+    'A description of the profile.',
+    'A list of textual labels that uniquely identify the controls or statements that the component implements.',
+    'A textual label that uniquely identifies a check of the policy (desired state) that can be used to reference it elsewhere in this or other documents.',
+    'A description of the check of the policy (desired state) including the method (interview or examine or test) and procedure details.',
+    'A namespace qualifying the property name. This allows different organizations to associate distinct semantics with the same name. Used in conjunction with "class" as the ontology concept. ',
+]
+
+service_component_title = 'OCP4'
+service_component_description = 'OCP4'
+service_component_type = 'service'
 service_rule_prefix = ''
 service_rule_prefix_help = 'None'
 
-validation_component_type = 'Validator'
-validation_resource = 'OSCO'
+validation_component_title = 'OSCO'
+validation_component_description = 'OSCO'
+validation_component_type = 'validation'
 validation_rule_prefix = ''
 validation_rule_prefix_help = 'None'
+
+default_namespace = 'http://ibm.github.io/compliance-trestle/schemas/oscal/cd'
+#default_namespace = 'http://ibm.github.io/compliance-trestle/schemas/oscal/cd/pvp/ocp'
 
 class Mainline:
     """Main."""
@@ -97,11 +122,32 @@ class Mainline:
             help=f'component type, default = {service_component_type}'
         )
         parser.add_argument(
-            '--resource',
+            '--service_component_title',
             type=str,
             required=False,
-            default=f'{service_resource}',
-            help=f'resource, default = {service_resource}'
+            default=f'{service_component_title}',
+            help=f'service_component_title, default = {service_component_title}'
+        )
+        parser.add_argument(
+            '--service_component_description',
+            type=str,
+            required=False,
+            default=f'{service_component_description}',
+            help=f'service_component_description, default = {service_component_description}'
+        )
+        parser.add_argument(
+            '--validation_component_title',
+            type=str,
+            required=False,
+            default=f'{validation_component_title}',
+            help=f'validation_component_title, default = {validation_component_title}'
+        )
+        parser.add_argument(
+            '--validation_component_description',
+            type=str,
+            required=False,
+            default=f'{validation_component_description}',
+            help=f'validation_component_description, default = {validation_component_description}'
         )
         parser.add_argument(
             '--rule-prefix',
@@ -116,6 +162,13 @@ class Mainline:
             required=False,
             default=None,
             help=f'rule-to-parameters-map, default = None'
+        )
+        parser.add_argument(
+            '--namespace',
+            type=str,
+            required=False,
+            default=f'{default_namespace}',
+            help=f'namespace, default = {default_namespace}'
         )
         args = parser.parse_args()
         return args
@@ -191,19 +244,21 @@ class Mainline:
                         sp = self._get_set_parameter(rule)
                         rule_id = f'{args.rule_prefix}{rule}'
                         row = [
+                            f'{args.service_component_title}',
+                            f'{args.service_component_description}',
+                            f'{service_component_type}',
                             f'{rule_id}',
                             f'{cis_node.description}',
-                            f'{profile_helper.get_url()}',
-                            f'{profile_helper.get_description()}',
-                            f'{args.component_type}',
-                            f'{control_id}',
-                            f'{args.resource}',
-                            '',
-                            '',
                             sp[0],
                             sp[1],
+                            sp[3],
                             sp[2],
-                            sp[3]
+                            f'{profile_helper.get_url()}',
+                            f'{profile_helper.get_description()}',
+                            f'{control_id}',
+                            '',
+                            '',
+                            f'{args.namespace}',
                         ]
                         rows.append(row)
         # process - validator
@@ -222,24 +277,26 @@ class Mainline:
                         check_description = cis_node.description
                         check_description = check_description.replace('Ensure', 'Check')
                         row = [
+                            f'{args.validation_component_title}',
+                            f'{args.validation_component_description}',
+                            f'{validation_component_type}',
                             f'{rule_id}',
                             f'{cis_node.description}',
-                            f'{profile_helper.get_url()}',
-                            f'{profile_helper.get_description()}',
-                            f'{validation_component_type}',
-                            f'{control_id}',
-                            f'{validation_resource}',
-                            f'{check_id}',
-                            f'{check_description}',
                             sp[0],
                             sp[1],
+                            sp[3],
                             sp[2],
-                            sp[3]
+                            f'{profile_helper.get_url()}',
+                            f'{profile_helper.get_description()}',
+                            f'{control_id}',
+                            f'{check_id}',
+                            f'{check_description}',
+                            f'{args.namespace}',
                         ]
                         rows.append(row)
         # write csv
         self.csv_helper = CsvHelper(opath, 'ocp4.csv')
-        self.csv_helper.write(column_names, rows)
+        self.csv_helper.write(column_names, column_descriptions, rows)
 
 
 def main():
