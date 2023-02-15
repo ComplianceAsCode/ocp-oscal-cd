@@ -25,11 +25,12 @@ class CsvHelper:
         """Initialize."""
         self._ipath = ipath / fname
 
-    def write(self, columns: List[str], rows: List[List[str]]):
+    def write(self, columns: List[str], descriptions: List[str], rows: List[List[str]]):
         """Write the output file."""
         # process csv
         with open(self._ipath, 'wt', encoding='utf-8') as output:
             csv_writer = csv.writer(output, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             csv_writer.writerow(columns)
+            csv_writer.writerow(descriptions)
             for row in rows:
                 csv_writer.writerow(row)

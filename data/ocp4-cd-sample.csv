@@ -1,3 +1,0 @@
-Rule_Id,Rule_Description,Profile_Reference_URL,Profile_Description,Component_Type,Control_Mappings,Resource,Parameter_Id,Parameter_Description,Parameter_Default_Value,Parameter_Value_Alternatives
-xccdf_org.ssgproject.content_rule_file_permissions_kube_apiserver,Ensure that the API server pod specification file permissions are set to 644 or more restrictive,catalogs/ocp4-cis/catlalog.json,ROKS OCP4 Tailored Profile v1.0,Service,CIS-1.1.1,OSCO,,,,
-xccdf_org.ssgproject.content_rule_file_owner_kube_apiserver,Ensure that the API server pod specification file ownership is set to root:root,catalogs/ocp4-cis/catlalog.json,ROKS OCP4 Tailored Profile v1.0,Service,CIS-1.1.2,OSCO,,,,
