@@ -15,7 +15,7 @@
 """CIS utils."""
 import logging
 import pathlib
-from typing import List, Optional, ValuesView
+from typing import Iterator, List, Optional, ValuesView
 
 from pydantic import BaseModel, Field
 
@@ -56,33 +56,49 @@ class CisProfileHelper:
         lines = self._get_content(self._ipath)
         self._parse(lines)
 
-    def _parse(self, lines: List[str]) -> None:
-        """Parse lines to build data structure."""
-        cis_node = None
-        for line in lines:
-            if line.startswith('    - '):
-                rule = line.split('    - ')[1]
+    def _process_rule(self, line: str, cis_node: CisNode) -> bool:
+        """Process rule."""
+        rval = False
+        if line.startswith('    - '):
+            rval = True
+            rule = line.split('    - ')[1].strip()
+            if cis_node is None:
+                logger.warn(f'dangling rule ignored: {rule}')
+            else:
                 if cis_node.rules is None:
                     cis_node.rules = []
                 cis_node.rules.append(rule)
-            line = line.strip()
-            if line.startswith('title: ') and "'" in line:
-                self._title = line.split("'")[1]
-                continue
-            line_parts = line.split(None, 2)
-            # must be 3 parts exactly
-            if len(line_parts) < 3:
-                continue
-            # normalized name and description
-            name = line_parts[1].rstrip('.')
-            description = line_parts[2]
-            # name must be numbers and decimal points
-            if not set(name) <= set('0123456789.'):
-                continue
-            # derive desired sortable key from name
-            key = self._get_key(name)
-            cis_node = CisNode(name=name, description=description)
-            self._node_map[key] = cis_node
+        return rval
+    
+    def _parse(self, lines: List[str]) -> None:
+        """Parse lines to build data structure."""
+        cis_node = None
+        try:
+            for index, line in enumerate(lines):
+                if self._process_rule(line, cis_node):
+                    continue
+                line = line.strip()
+                if line.startswith('title: ') and "'" in line:
+                    self._title = line.split("'")[1]
+                    continue
+                line_parts = line.split(None, 2)
+                # must be 3 parts exactly
+                if len(line_parts) < 3:
+                    continue
+                # normalized name and description
+                name = line_parts[1].rstrip('.')
+                description = line_parts[2]
+                # name must be numbers and decimal points
+                valid_name = set(name) <= set('0123456789.')
+                if not valid_name:
+                    continue
+                # derive desired sortable key from name
+                key = self._get_key(name)
+                cis_node = CisNode(name=name, description=description)
+                self._node_map[key] = cis_node
+        except Exception:
+            text = f'error processing lineno: {index} file: {self._file} line: {line}'
+            raise RuntimeError(text)
 
     def _get_content(self, fp: pathlib.Path) -> List[str]:
         """Fetch content from file."""
@@ -118,12 +134,12 @@ class CisProfileHelper:
                 root_nodes[node.name] = node
         return root_nodes.values()
 
-    def root_node_generator(self) -> CisNode:
+    def root_node_generator(self) -> Iterator[CisNode]:
         """Root node generator."""
         for root_node in self._get_root_nodes():
             yield root_node
 
-    def node_generator(self) -> CisNode:
+    def node_generator(self) -> Iterator[CisNode]:
         """Node generator."""
         for node in self._node_map.values():
             yield node
@@ -149,27 +165,25 @@ class CisOscalCatalogHelper:
         cpath = pathlib.Path(catalog_file)
         if not cpath.is_file():
             text = f'input file "{cpath}" not found'
-            raise Exception(text)
+            raise RuntimeError(text)
         catalog = Catalog.oscal_read(cpath)
         control_ids_list = []
         self._ingest_catalog_groups(catalog.groups, control_ids_list)
-        self._ingest_catalog_controls(catalog.groups, control_ids_list, None, None)
+        self._ingest_catalog_controls(catalog.groups, control_ids_list, None)
         self._control_ids_list = control_ids_list
-        logger.debug(f'{control_ids_list}')
 
     def _ingest_catalog_groups(self, groups: List[Group], control_ids: List[str]) -> None:
         if groups:
             for group in groups:
                 self._ingest_catalog_groups(group.groups, control_ids)
-                self._ingest_catalog_controls(group.controls, control_ids, group, None)
+                self._ingest_catalog_controls(group.controls, control_ids, group)
 
     def _ingest_catalog_controls(
-        self, controls: List[Control], control_ids: List[str], group: Group, parent_control: Control
-    ) -> None:
+        self, controls: List[Control], control_ids: List[str], group: Group) -> None:
         if controls:
             for control in controls:
                 control_ids.append(control.id)
-                self._ingest_catalog_controls(control.controls, control_ids, group, control)
+                self._ingest_catalog_controls(control.controls, control_ids, group)
 
     def is_present(self, control_id) -> bool:
         """Check if catalog contains specified control id."""
