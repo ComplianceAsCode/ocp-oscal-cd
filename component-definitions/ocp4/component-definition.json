@@ -1,15 +1,15 @@
 {
   "component-definition": {
-    "uuid": "75926894-eac4-4191-b766-57be3ab0744b",
+    "uuid": "27ef2ee1-26c1-436e-ae94-0546b961ff06",
     "metadata": {
       "title": "Component definition for CIS Red Hat OpenShift Container Platform 4 Benchmark profiles",
-      "last-modified": "2023-02-16T18:55:38.273833+05:30",
+      "last-modified": "2023-02-16T13:35:31.353065+00:00",
       "version": "1.1",
       "oscal-version": "1.0.2"
     },
     "components": [
       {
-        "uuid": "0bb291b4-0a78-4167-8d18-6defef1d3a96",
+        "uuid": "4be43b22-e9cf-46a4-a0d6-baad0d4e7045",
         "type": "service",
         "title": "OCP4",
         "description": "OCP4",
@@ -2501,12 +2501,12 @@
         ],
         "control-implementations": [
           {
-            "uuid": "b9b442ba-8ab1-4f58-a94f-f1f1279335d9",
+            "uuid": "3b936838-e5d9-409e-9a2a-45dc0c441bdf",
             "source": "profiles/OCP4_CIS_NODE/profile.json",
             "description": "OCP4 CIS Node Profile",
             "implemented-requirements": [
               {
-                "uuid": "15f3e80f-8e24-4470-93b3-0743f0ffb9b2",
+                "uuid": "263f2475-e324-44e3-b833-b778ce1f88e3",
                 "control-id": "CIS-1.1.1",
                 "description": "",
                 "props": [
@@ -2522,7 +2522,7 @@
                 ]
               },
               {
-                "uuid": "3d5e2041-45a0-41bd-8507-70927bbc3a7c",
+                "uuid": "a5511b4d-a679-468d-b87a-8ee871b3023f",
                 "control-id": "CIS-1.1.2",
                 "description": "",
                 "props": [
@@ -2543,7 +2543,7 @@
                 ]
               },
               {
-                "uuid": "69ac1916-8e2b-48d5-93b7-1711e54093b5",
+                "uuid": "f92e352c-713a-4650-a917-4f8fa97eb8c0",
                 "control-id": "CIS-1.1.3",
                 "description": "",
                 "props": [
@@ -2559,7 +2559,7 @@
                 ]
               },
               {
-                "uuid": "cd9c39df-e8f3-476a-9866-978d2b095c9b",
+                "uuid": "02b7e317-a359-462d-a684-01e8969c4c19",
                 "control-id": "CIS-1.1.4",
                 "description": "",
                 "props": [
@@ -2580,7 +2580,7 @@
                 ]
               },
               {
-                "uuid": "17faa93d-ffe7-4d96-9100-3490391caac8",
+                "uuid": "7fc30cc5-2409-4385-8523-46de478409f8",
                 "control-id": "CIS-1.1.5",
                 "description": "",
                 "props": [
@@ -2596,7 +2596,7 @@
                 ]
               },
               {
-                "uuid": "eb3e7b30-028a-4170-8691-ca793755f62a",
+                "uuid": "f1404aa6-38b8-4ec7-bf59-b9e65716b723",
                 "control-id": "CIS-1.1.6",
                 "description": "",
                 "props": [
@@ -2617,7 +2617,7 @@
                 ]
               },
               {
-                "uuid": "3bbc87f1-3223-4430-a189-fa579623d3c1",
+                "uuid": "14b015c7-3055-4902-b958-2ffd9a1bc3f0",
                 "control-id": "CIS-1.1.7",
                 "description": "",
                 "props": [
@@ -2633,7 +2633,7 @@
                 ]
               },
               {
-                "uuid": "44b1cfd6-8b54-44cd-a652-848cf9127f06",
+                "uuid": "12f01627-fa62-4ea1-a300-7fa98731f779",
                 "control-id": "CIS-1.1.8",
                 "description": "",
                 "props": [
@@ -2654,7 +2654,7 @@
                 ]
               },
               {
-                "uuid": "53e580f8-087c-4e14-9274-20d97b8a8188",
+                "uuid": "a09e4e58-ae2e-4956-8d19-76ed76679bfe",
                 "control-id": "CIS-1.1.9",
                 "description": "",
                 "props": [
@@ -2725,7 +2725,7 @@
                 ]
               },
               {
-                "uuid": "d3936d61-d947-47c4-b542-cc6220d66c20",
+                "uuid": "54b924bf-63d0-42eb-88f5-c7fac598c465",
                 "control-id": "CIS-1.1.10",
                 "description": "",
                 "props": [
@@ -2856,7 +2856,7 @@
                 ]
               },
               {
-                "uuid": "3441f59e-cb36-499d-9c2e-2ad0bdc2588a",
+                "uuid": "c02b99bc-4571-438c-a5e2-2c12536322e9",
                 "control-id": "CIS-1.1.11",
                 "description": "",
                 "props": [
@@ -2877,7 +2877,7 @@
                 ]
               },
               {
-                "uuid": "25c5d8b7-44eb-4f68-8169-d6143327d447",
+                "uuid": "d032a26d-2ded-46e3-b318-72d0b12368d9",
                 "control-id": "CIS-1.1.12",
                 "description": "",
                 "props": [
@@ -2908,7 +2908,7 @@
                 ]
               },
               {
-                "uuid": "42a9866c-1934-44c5-8cb9-03eee4d49a79",
+                "uuid": "4b1488e3-0b73-4df6-83ce-2a86d1aad091",
                 "control-id": "CIS-1.1.13",
                 "description": "",
                 "props": [
@@ -2924,7 +2924,7 @@
                 ]
               },
               {
-                "uuid": "ac09f615-b5e9-4b9d-9455-d54a775ceb12",
+                "uuid": "72f00682-4961-49d5-9c72-464feddde60b",
                 "control-id": "CIS-1.1.14",
                 "description": "",
                 "props": [
@@ -2945,7 +2945,7 @@
                 ]
               },
               {
-                "uuid": "8537bec4-8e9c-4546-bcce-6f5f5db2c34b",
+                "uuid": "ca4d725b-ff6a-472e-8b65-64221cffb030",
                 "control-id": "CIS-1.1.15",
                 "description": "",
                 "props": [
@@ -2961,7 +2961,7 @@
                 ]
               },
               {
-                "uuid": "75a54ea9-586f-4fd6-b2b9-0e4c9d16e676",
+                "uuid": "1bea4b19-16be-4133-8376-a988239bbd78",
                 "control-id": "CIS-1.1.16",
                 "description": "",
                 "props": [
@@ -2982,7 +2982,7 @@
                 ]
               },
               {
-                "uuid": "b4dbef14-d37f-41ed-bed5-764ce06e9bf5",
+                "uuid": "31742922-8051-41ec-aa1d-222ba7695b2d",
                 "control-id": "CIS-1.1.17",
                 "description": "",
                 "props": [
@@ -2998,7 +2998,7 @@
                 ]
               },
               {
-                "uuid": "1abb4db1-f58e-4b2d-9872-fdb49290d889",
+                "uuid": "d5b7d816-ad1b-4d3b-ba05-4751ea913587",
                 "control-id": "CIS-1.1.18",
                 "description": "",
                 "props": [
@@ -3019,7 +3019,7 @@
                 ]
               },
               {
-                "uuid": "f8d654be-532f-447c-8fee-9a64795e84c2",
+                "uuid": "2355104f-589b-4dbf-924e-7757381133dc",
                 "control-id": "CIS-1.1.19",
                 "description": "",
                 "props": [
@@ -3060,7 +3060,7 @@
                 ]
               },
               {
-                "uuid": "b42001b0-1b0e-4781-898b-bef1d6c6929d",
+                "uuid": "2da145bb-8e37-4006-a32b-7196fcc04cce",
                 "control-id": "CIS-1.1.20",
                 "description": "",
                 "props": [
@@ -3081,7 +3081,7 @@
                 ]
               },
               {
-                "uuid": "33f6f81a-666c-4c1d-9bb0-bb170a792940",
+                "uuid": "de8e5c57-b75d-48ca-b299-5450f9c23427",
                 "control-id": "CIS-1.1.21",
                 "description": "",
                 "props": [
@@ -3097,7 +3097,7 @@
                 ]
               },
               {
-                "uuid": "fc4fa15c-8a15-4dad-939e-72d2fde1c2ff",
+                "uuid": "69d2a612-3cfb-49e3-88db-039d75ea9dba",
                 "control-id": "CIS-2.7",
                 "description": "",
                 "props": [
@@ -3113,7 +3113,7 @@
                 ]
               },
               {
-                "uuid": "6a8870f6-9bcd-4b54-8146-bc96e0eac2a9",
+                "uuid": "534b2992-2e3e-43e4-a907-34782ad75f1c",
                 "control-id": "CIS-4.1.1",
                 "description": "",
                 "props": [
@@ -3129,7 +3129,7 @@
                 ]
               },
               {
-                "uuid": "03eb0ca2-66de-4fae-b2ac-616f211b7175",
+                "uuid": "bfcbe9eb-abe0-4f3c-a1ab-b3347522fe9a",
                 "control-id": "CIS-4.1.2",
                 "description": "",
                 "props": [
@@ -3150,7 +3150,7 @@
                 ]
               },
               {
-                "uuid": "37820864-ce83-4852-b3bd-14a3c79b6952",
+                "uuid": "13cd656b-2f03-46cf-a885-87239b4a9511",
                 "control-id": "CIS-4.1.5",
                 "description": "",
                 "props": [
@@ -3166,7 +3166,7 @@
                 ]
               },
               {
-                "uuid": "4e5ed64a-d62e-4c2d-b5aa-edea1cbc3c1d",
+                "uuid": "0675cd2a-6ece-44fe-8674-7cc95712d962",
                 "control-id": "CIS-4.1.6",
                 "description": "",
                 "props": [
@@ -3197,7 +3197,7 @@
                 ]
               },
               {
-                "uuid": "3e666d3b-f202-4420-ae53-23e335bb99cf",
+                "uuid": "02f6df00-70b0-4c9f-abcf-c850859d26ae",
                 "control-id": "CIS-4.1.7",
                 "description": "",
                 "props": [
@@ -3213,7 +3213,7 @@
                 ]
               },
               {
-                "uuid": "03d82f15-51c4-4624-9830-07a5567d2d1b",
+                "uuid": "4ba1ae29-1c22-45c6-80c5-952f03bf68e0",
                 "control-id": "CIS-4.1.8",
                 "description": "",
                 "props": [
@@ -3234,7 +3234,7 @@
                 ]
               },
               {
-                "uuid": "6ba051f2-794a-445b-ac98-8f19f38f5631",
+                "uuid": "38724a3c-55b2-461f-8a15-1edbbefe1abe",
                 "control-id": "CIS-4.1.9",
                 "description": "",
                 "props": [
@@ -3250,7 +3250,7 @@
                 ]
               },
               {
-                "uuid": "1b55bb0e-837f-4425-a378-b14a3ddceabd",
+                "uuid": "d9472bf7-26e3-4bf9-ba4d-9b4de7e65e22",
                 "control-id": "CIS-4.1.10",
                 "description": "",
                 "props": [
@@ -3271,7 +3271,7 @@
                 ]
               },
               {
-                "uuid": "198d9b6d-62d6-4c00-89be-8f6a576a3d13",
+                "uuid": "71b44517-e52f-4f94-9cbb-46b2d200faed",
                 "control-id": "CIS-4.2.6",
                 "description": "",
                 "props": [
@@ -3294,7 +3294,7 @@
             ]
           },
           {
-            "uuid": "7c8f2541-9f0b-4c18-a43f-64292244ec7b",
+            "uuid": "f0171eb0-421a-4bc4-a481-3bc6f188d88a",
             "source": "profiles/OCP4_CIS/profile.json",
             "description": "OCP4 CIS Profile",
             "set-parameters": [
@@ -3325,7 +3325,7 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "f9ed624f-1208-4f6f-af13-65806803cf57",
+                "uuid": "1d875c0e-94fe-43c0-9d9e-65ecf5463a71",
                 "control-id": "CIS-1.2.1",
                 "description": "",
                 "props": [
@@ -3341,7 +3341,7 @@
                 ]
               },
               {
-                "uuid": "0afc6127-4c21-4274-a3f4-6452ea18f54b",
+                "uuid": "7fc7f899-262e-4b7b-aab8-10c5e00ca5e3",
                 "control-id": "CIS-1.2.2",
                 "description": "",
                 "props": [
@@ -3357,7 +3357,7 @@
                 ]
               },
               {
-                "uuid": "7b0b2cc4-1b8c-4fe2-932a-66b42963e725",
+                "uuid": "310ca077-9c7e-428e-bd3c-2da08e3ec6ab",
                 "control-id": "CIS-1.2.3",
                 "description": "",
                 "props": [
@@ -3373,7 +3373,7 @@
                 ]
               },
               {
-                "uuid": "848221c8-d1d0-4f2e-846f-48212757f93a",
+                "uuid": "95fd3114-1d45-4e95-85cb-373176e17cac",
                 "control-id": "CIS-1.2.4",
                 "description": "",
                 "props": [
@@ -3399,7 +3399,7 @@
                 ]
               },
               {
-                "uuid": "0952aab5-bef3-4361-be90-948cf1cb4621",
+                "uuid": "a8d21f2c-a0c3-4250-8282-c5e5db3e4edc",
                 "control-id": "CIS-1.2.5",
                 "description": "",
                 "props": [
@@ -3430,7 +3430,7 @@
                 ]
               },
               {
-                "uuid": "e0d0e288-1c90-4a2d-826e-3df45f604c19",
+                "uuid": "ae0549cc-32e0-43dc-8ad6-c0b9a57d6d58",
                 "control-id": "CIS-1.2.6",
                 "description": "",
                 "props": [
@@ -3446,7 +3446,7 @@
                 ]
               },
               {
-                "uuid": "8d60f396-2ed4-47dc-904b-08eb574d20ad",
+                "uuid": "6f948b2f-0e90-4a89-b5c0-a3c4bfe86e46",
                 "control-id": "CIS-1.2.7",
                 "description": "",
                 "props": [
@@ -3462,7 +3462,7 @@
                 ]
               },
               {
-                "uuid": "535aa539-3fb8-4fa5-bff3-37533d4918c6",
+                "uuid": "f4882de9-1a8b-4b47-a8c7-35534276cf97",
                 "control-id": "CIS-1.2.8",
                 "description": "",
                 "props": [
@@ -3478,7 +3478,7 @@
                 ]
               },
               {
-                "uuid": "8175b16a-fcc8-43ad-8bea-89c487d8f522",
+                "uuid": "227bd32c-d913-4c59-a7fb-f088f7639e29",
                 "control-id": "CIS-1.2.9",
                 "description": "",
                 "props": [
@@ -3494,7 +3494,7 @@
                 ]
               },
               {
-                "uuid": "204f586d-8fc7-49e4-bedf-2183690f0d6a",
+                "uuid": "a18f2428-0c74-4f7e-93c7-464b6f0caf1c",
                 "control-id": "CIS-1.2.10",
                 "description": "",
                 "props": [
@@ -3515,7 +3515,7 @@
                 ]
               },
               {
-                "uuid": "e65d5afa-3fff-4c9a-8dd5-cb3fc5237fde",
+                "uuid": "01de100b-4804-4876-8cc6-ca6be29c9756",
                 "control-id": "CIS-1.2.11",
                 "description": "",
                 "props": [
@@ -3531,7 +3531,7 @@
                 ]
               },
               {
-                "uuid": "2f5b880b-4424-4dfb-9e7d-2ae7e9a3d41f",
+                "uuid": "3f58cc74-a516-47b4-822b-5c4ef3f280a2",
                 "control-id": "CIS-1.2.12",
                 "description": "",
                 "props": [
@@ -3547,7 +3547,7 @@
                 ]
               },
               {
-                "uuid": "81409625-e10a-42f0-9a26-eb6407a40a1f",
+                "uuid": "e9683705-3ab4-44cb-a258-8a8fafb55fec",
                 "control-id": "CIS-1.2.13",
                 "description": "",
                 "props": [
@@ -3563,7 +3563,7 @@
                 ]
               },
               {
-                "uuid": "cdc4ace8-51f6-442c-bc6a-4658fab2075c",
+                "uuid": "59fcbaba-614d-4a48-ad19-d357e98d880e",
                 "control-id": "CIS-1.2.14",
                 "description": "",
                 "props": [
@@ -3584,7 +3584,7 @@
                 ]
               },
               {
-                "uuid": "d47b9888-28c9-4eb8-ab0c-91124cd85981",
+                "uuid": "7f4bf41e-4483-48cb-93ee-250f26d437c9",
                 "control-id": "CIS-1.2.15",
                 "description": "",
                 "props": [
@@ -3600,7 +3600,7 @@
                 ]
               },
               {
-                "uuid": "4d10a9d5-1826-40f9-b04e-356042317b4e",
+                "uuid": "f7be670b-f290-48f9-b378-6de7b01f1c28",
                 "control-id": "CIS-1.2.16",
                 "description": "",
                 "props": [
@@ -3616,7 +3616,7 @@
                 ]
               },
               {
-                "uuid": "ccb17a9d-3cbc-4caa-8db3-021639b88353",
+                "uuid": "f2afe3b8-647b-4a7c-b813-638a538a3c98",
                 "control-id": "CIS-1.2.17",
                 "description": "",
                 "props": [
@@ -3632,7 +3632,7 @@
                 ]
               },
               {
-                "uuid": "867ae966-2caa-448e-be4e-81bb37b6ee61",
+                "uuid": "115f345a-9d3c-492d-8fef-0b3eabf46d4a",
                 "control-id": "CIS-1.2.18",
                 "description": "",
                 "props": [
@@ -3648,7 +3648,7 @@
                 ]
               },
               {
-                "uuid": "5a5900a6-988e-43f2-95d8-909cd5daa8b6",
+                "uuid": "fd29a363-a598-4431-aa52-a5de3a6df86a",
                 "control-id": "CIS-1.2.19",
                 "description": "",
                 "props": [
@@ -3664,7 +3664,7 @@
                 ]
               },
               {
-                "uuid": "b5e1f95e-2cb6-4dac-97dd-f073ab9322d5",
+                "uuid": "5e3f133f-4ac4-41bc-9069-e1439390cb46",
                 "control-id": "CIS-1.2.20",
                 "description": "",
                 "props": [
@@ -3680,7 +3680,7 @@
                 ]
               },
               {
-                "uuid": "664fec5d-ae51-440e-8919-3f0e9cac36be",
+                "uuid": "39b0b48b-7125-446e-b3a9-492df4d8f747",
                 "control-id": "CIS-1.2.21",
                 "description": "",
                 "props": [
@@ -3696,7 +3696,7 @@
                 ]
               },
               {
-                "uuid": "98e710f1-7ec9-40ee-beaf-f21742a5fced",
+                "uuid": "2cb82b59-a701-4eb5-8208-d1804b24c4ca",
                 "control-id": "CIS-1.2.22",
                 "description": "",
                 "props": [
@@ -3717,7 +3717,7 @@
                 ]
               },
               {
-                "uuid": "6913280b-56a9-4b62-862a-82f3d153ecbf",
+                "uuid": "11d76260-99cf-4910-bcdc-319c67e7583a",
                 "control-id": "CIS-1.2.23",
                 "description": "",
                 "props": [
@@ -3733,7 +3733,7 @@
                 ]
               },
               {
-                "uuid": "1cbff768-983c-465c-8990-01f6f5364f50",
+                "uuid": "a28d7750-f23d-4755-bb26-c77cec21ca5c",
                 "control-id": "CIS-1.2.24",
                 "description": "",
                 "props": [
@@ -3754,7 +3754,7 @@
                 ]
               },
               {
-                "uuid": "a4fbe7c7-160b-42f1-a363-c0f986f5f0e1",
+                "uuid": "907839e4-b447-4179-a0b1-567b016ed725",
                 "control-id": "CIS-1.2.25",
                 "description": "",
                 "props": [
@@ -3775,7 +3775,7 @@
                 ]
               },
               {
-                "uuid": "a5f87751-a08c-4431-a8a9-0767fa7660f6",
+                "uuid": "2bf286e2-51ca-4fe8-b4d5-168d4d20a31c",
                 "control-id": "CIS-1.2.26",
                 "description": "",
                 "props": [
@@ -3791,7 +3791,7 @@
                 ]
               },
               {
-                "uuid": "18a31ac9-e525-46e9-9f44-574698764e71",
+                "uuid": "ac49b6aa-25be-4f7b-9f0f-2acb09fe63a1",
                 "control-id": "CIS-1.2.27",
                 "description": "",
                 "props": [
@@ -3807,7 +3807,7 @@
                 ]
               },
               {
-                "uuid": "be593ce6-dbb9-4533-9987-9bcdc6f3da8d",
+                "uuid": "9861c7d1-0dd9-48c4-b671-184178e59b5c",
                 "control-id": "CIS-1.2.28",
                 "description": "",
                 "props": [
@@ -3823,7 +3823,7 @@
                 ]
               },
               {
-                "uuid": "ed7edbad-8a18-4786-9725-bc7c4f3c78f4",
+                "uuid": "5a47ebba-6ffd-4352-a18b-44e03849c627",
                 "control-id": "CIS-1.2.29",
                 "description": "",
                 "props": [
@@ -3844,7 +3844,7 @@
                 ]
               },
               {
-                "uuid": "d06bcd6f-de01-4b72-b743-1f6405b1d6eb",
+                "uuid": "cdc67463-0a95-46a5-b077-57e36924e1b0",
                 "control-id": "CIS-1.2.30",
                 "description": "",
                 "props": [
@@ -3865,7 +3865,7 @@
                 ]
               },
               {
-                "uuid": "78aa1c48-d1e8-483c-9c31-7cb034e01dab",
+                "uuid": "2398b2be-34a7-4edc-a287-620c905d3d82",
                 "control-id": "CIS-1.2.31",
                 "description": "",
                 "props": [
@@ -3881,7 +3881,7 @@
                 ]
               },
               {
-                "uuid": "fd2e0729-1fb0-4cf1-9b11-795e3f6879d5",
+                "uuid": "b2f8070b-a24d-4026-8f56-73320638c219",
                 "control-id": "CIS-1.2.32",
                 "description": "",
                 "props": [
@@ -3897,7 +3897,7 @@
                 ]
               },
               {
-                "uuid": "a3a31b36-da6c-47e2-9bb6-961939d9aa46",
+                "uuid": "e03b625b-681f-4989-898e-fc25e543165d",
                 "control-id": "CIS-1.2.33",
                 "description": "",
                 "props": [
@@ -3913,7 +3913,7 @@
                 ]
               },
               {
-                "uuid": "7ba28d86-ef3f-4883-808b-b6986b31210b",
+                "uuid": "4a8eaccf-0f7d-4669-b357-c248feb31674",
                 "control-id": "CIS-1.2.34",
                 "description": "",
                 "props": [
@@ -3929,7 +3929,7 @@
                 ]
               },
               {
-                "uuid": "683a649c-c66d-4fea-a351-fb7c65f80a58",
+                "uuid": "f972e0cf-dcf9-45c4-a359-9ef2df5b96c9",
                 "control-id": "CIS-1.2.35",
                 "description": "",
                 "props": [
@@ -3945,7 +3945,7 @@
                 ]
               },
               {
-                "uuid": "a43bc23e-8989-4406-bac9-5399fa7f4331",
+                "uuid": "9332dadd-eafb-488a-be4e-4d919d14cc12",
                 "control-id": "CIS-1.3.1",
                 "description": "",
                 "props": [
@@ -3976,7 +3976,7 @@
                 ]
               },
               {
-                "uuid": "a9e34084-447a-44e2-b9fd-58668fd82304",
+                "uuid": "f09f4eba-af8a-468b-86ca-dcd4bc0c20a8",
                 "control-id": "CIS-1.3.2",
                 "description": "",
                 "props": [
@@ -3992,7 +3992,7 @@
                 ]
               },
               {
-                "uuid": "034dae6b-f499-4b6b-804d-dd81771615ab",
+                "uuid": "7c2c0094-9d24-4622-a939-ed23de5258a5",
                 "control-id": "CIS-1.3.3",
                 "description": "",
                 "props": [
@@ -4008,7 +4008,7 @@
                 ]
               },
               {
-                "uuid": "b82b50be-bca0-4558-9a06-765bd4ee8f90",
+                "uuid": "13b93b6a-cf71-49b2-8416-928425871715",
                 "control-id": "CIS-1.3.4",
                 "description": "",
                 "props": [
@@ -4024,7 +4024,7 @@
                 ]
               },
               {
-                "uuid": "fd7ee219-7a34-42ab-a7ca-c58f21556430",
+                "uuid": "42edeb3e-f6dc-4feb-9d14-4179bfffc37e",
                 "control-id": "CIS-1.3.5",
                 "description": "",
                 "props": [
@@ -4040,7 +4040,7 @@
                 ]
               },
               {
-                "uuid": "48f4c175-3cf1-40b8-9576-ba61cabe02ec",
+                "uuid": "ab8ee2d0-59d3-4016-9897-7b9b1db1722b",
                 "control-id": "CIS-1.3.6",
                 "description": "",
                 "props": [
@@ -4056,7 +4056,7 @@
                 ]
               },
               {
-                "uuid": "af6a78ec-ddfb-4191-aaf1-e6cfc4b74605",
+                "uuid": "5d8ce7a0-1244-4245-8591-2dd4bcb41796",
                 "control-id": "CIS-1.3.7",
                 "description": "",
                 "props": [
@@ -4077,7 +4077,7 @@
                 ]
               },
               {
-                "uuid": "66700816-e47d-469a-ab1b-921fb8806940",
+                "uuid": "fe4335ae-1636-4927-bd09-b28f37727c3b",
                 "control-id": "CIS-1.4.2",
                 "description": "",
                 "props": [
@@ -4093,7 +4093,7 @@
                 ]
               },
               {
-                "uuid": "b8db461d-7568-4c4f-80f2-2d0885210860",
+                "uuid": "7af3ecfb-a431-4160-80c8-86d3a0f05d0b",
                 "control-id": "CIS-2.1",
                 "description": "",
                 "props": [
@@ -4114,7 +4114,7 @@
                 ]
               },
               {
-                "uuid": "d4b24622-11b0-4224-8848-595ec6599892",
+                "uuid": "7d81e4b4-7c68-48a9-aa05-d29977645970",
                 "control-id": "CIS-2.2",
                 "description": "",
                 "props": [
@@ -4130,7 +4130,7 @@
                 ]
               },
               {
-                "uuid": "bb085f6e-d0b9-4f17-ba1d-963c9aeca21a",
+                "uuid": "674c8ff8-26e7-42ce-b414-02d5f424dbd2",
                 "control-id": "CIS-2.3",
                 "description": "",
                 "props": [
@@ -4146,7 +4146,7 @@
                 ]
               },
               {
-                "uuid": "9a869fcf-f3df-418c-b234-c7c6762f2411",
+                "uuid": "6bb50ecc-25e2-4b72-8d8e-22908e09a1a0",
                 "control-id": "CIS-2.4",
                 "description": "",
                 "props": [
@@ -4167,7 +4167,7 @@
                 ]
               },
               {
-                "uuid": "1b9fad0d-1931-4893-abd8-35151b06f3eb",
+                "uuid": "3dad6717-3e39-48b5-9522-aa4db357e5f9",
                 "control-id": "CIS-2.5",
                 "description": "",
                 "props": [
@@ -4183,7 +4183,7 @@
                 ]
               },
               {
-                "uuid": "bb34a18b-9426-486b-afd3-924a6b2058d0",
+                "uuid": "8cd66658-f011-47c0-9b13-2ec0f444f75d",
                 "control-id": "CIS-2.6",
                 "description": "",
                 "props": [
@@ -4199,7 +4199,7 @@
                 ]
               },
               {
-                "uuid": "e889a8fb-114c-48e7-abb0-0a3bc72e5032",
+                "uuid": "d1688eed-a741-41d3-968d-3490e30aa2b5",
                 "control-id": "CIS-3.1.1",
                 "description": "",
                 "props": [
@@ -4220,7 +4220,7 @@
                 ]
               },
               {
-                "uuid": "3fee7934-7aec-44d4-942a-636876a15694",
+                "uuid": "e6c71998-d109-4bd3-8505-37f51c05625c",
                 "control-id": "CIS-3.2.2",
                 "description": "",
                 "props": [
@@ -4236,7 +4236,7 @@
                 ]
               },
               {
-                "uuid": "f55c46bd-1748-4a07-b3b5-be270f05913a",
+                "uuid": "01c4b0ea-6be3-41af-8ce7-dad015f44b09",
                 "control-id": "CIS-4.1.3",
                 "description": "",
                 "props": [
@@ -4252,7 +4252,7 @@
                 ]
               },
               {
-                "uuid": "f9864359-e1c7-4066-a7a6-fd6751d7f17b",
+                "uuid": "0167e32b-9b87-45a2-a0d6-564f035dad8f",
                 "control-id": "CIS-4.1.4",
                 "description": "",
                 "props": [
@@ -4273,7 +4273,7 @@
                 ]
               },
               {
-                "uuid": "723eebde-852a-4421-a0b7-4930099e4335",
+                "uuid": "9e5fee7e-281f-4db6-8ffb-ce7e59b7d037",
                 "control-id": "CIS-4.2.1",
                 "description": "",
                 "props": [
@@ -4289,7 +4289,7 @@
                 ]
               },
               {
-                "uuid": "45889781-6cdd-46bd-9a39-6bda86b44d2e",
+                "uuid": "d7f71a63-e9b8-4d5f-a35c-46ac9501220b",
                 "control-id": "CIS-4.2.2",
                 "description": "",
                 "props": [
@@ -4305,7 +4305,7 @@
                 ]
               },
               {
-                "uuid": "ccc9b53f-0f38-4b3e-be71-95204e984334",
+                "uuid": "93883c7e-3d3f-46da-8edb-b86d54d760db",
                 "control-id": "CIS-4.2.3",
                 "description": "",
                 "props": [
@@ -4321,7 +4321,7 @@
                 ]
               },
               {
-                "uuid": "fb4e7775-1d0f-4471-8b20-1ee24cca5aad",
+                "uuid": "617c2cdd-b81f-437e-affb-5bd1beb4f5bd",
                 "control-id": "CIS-4.2.4",
                 "description": "",
                 "props": [
@@ -4337,7 +4337,7 @@
                 ]
               },
               {
-                "uuid": "6616d886-4e2f-4f36-a82e-fc8e4d73b731",
+                "uuid": "d8801d64-a8c2-4eef-9499-e1946f4263bc",
                 "control-id": "CIS-4.2.5",
                 "description": "",
                 "props": [
@@ -4353,7 +4353,7 @@
                 ]
               },
               {
-                "uuid": "f6046b22-f8e7-4ec8-b4b6-fe9adea27265",
+                "uuid": "1d927887-ea59-41f1-9c2c-2ae13945a101",
                 "control-id": "CIS-4.2.7",
                 "description": "",
                 "props": [
@@ -4369,7 +4369,7 @@
                 ]
               },
               {
-                "uuid": "5d5e4aca-5cf9-4c84-ae81-8ab202d19cc5",
+                "uuid": "5fe27dab-4183-408f-81c7-c8264449f029",
                 "control-id": "CIS-4.2.9",
                 "description": "",
                 "props": [
@@ -4385,7 +4385,7 @@
                 ]
               },
               {
-                "uuid": "2339e904-e543-4389-a536-5a3b706aa1cb",
+                "uuid": "bcb72262-5e49-4d15-ba90-a9bf012f1f23",
                 "control-id": "CIS-4.2.10",
                 "description": "",
                 "props": [
@@ -4416,7 +4416,7 @@
                 ]
               },
               {
-                "uuid": "ce41f3bb-8ad3-4fc4-82b9-e8387f6e8b8a",
+                "uuid": "21a0adac-70ee-4bc0-a314-b77544eb70b3",
                 "control-id": "CIS-4.2.11",
                 "description": "",
                 "props": [
@@ -4437,7 +4437,7 @@
                 ]
               },
               {
-                "uuid": "f8d6f68d-3737-4c1e-a72e-8f8e8332ba75",
+                "uuid": "41d46b40-392b-4258-af9d-c64f1140d658",
                 "control-id": "CIS-4.2.12",
                 "description": "",
                 "props": [
@@ -4453,7 +4453,7 @@
                 ]
               },
               {
-                "uuid": "35894b46-36c6-4a20-9ead-05705dccc733",
+                "uuid": "7872075b-1fde-4904-9670-3e102b99a913",
                 "control-id": "CIS-4.2.13",
                 "description": "",
                 "props": [
@@ -4469,7 +4469,7 @@
                 ]
               },
               {
-                "uuid": "abfc577a-7fa2-49b3-b295-e436b19b6e4f",
+                "uuid": "48f65a12-5b30-4823-b844-90a6ef879c55",
                 "control-id": "CIS-5.1.1",
                 "description": "",
                 "props": [
@@ -4485,7 +4485,7 @@
                 ]
               },
               {
-                "uuid": "76bed2dc-a33d-43b5-a2cc-e036d0bde2dc",
+                "uuid": "35d4669b-b7a9-40ed-88a2-98d2e3673a88",
                 "control-id": "CIS-5.1.2",
                 "description": "",
                 "props": [
@@ -4501,7 +4501,7 @@
                 ]
               },
               {
-                "uuid": "4eed5089-df35-467f-8a8e-5bee4c3ea596",
+                "uuid": "b605bec5-2b11-4116-9f25-5c5bfbc5e44c",
                 "control-id": "CIS-5.1.3",
                 "description": "",
                 "props": [
@@ -4517,7 +4517,7 @@
                 ]
               },
               {
-                "uuid": "54b81c43-999d-4a05-8587-7a439317551e",
+                "uuid": "c037e243-3229-40f0-9ce9-278f7303ff06",
                 "control-id": "CIS-5.1.4",
                 "description": "",
                 "props": [
@@ -4533,7 +4533,7 @@
                 ]
               },
               {
-                "uuid": "bf55329d-e953-4861-a662-78f683bdc2c9",
+                "uuid": "76389d7e-99c4-4453-81e3-1b71317da24e",
                 "control-id": "CIS-5.1.5",
                 "description": "",
                 "props": [
@@ -4549,7 +4549,7 @@
                 ]
               },
               {
-                "uuid": "d01de6ac-f393-421e-b70b-13119efa5539",
+                "uuid": "6a39a5bb-0fe6-4f11-88b9-07d17803a027",
                 "control-id": "CIS-5.1.6",
                 "description": "",
                 "props": [
@@ -4565,7 +4565,7 @@
                 ]
               },
               {
-                "uuid": "5414ee41-6ad9-4c0d-b6d4-49cb389afa19",
+                "uuid": "e120f2f4-1f5c-4654-ae39-23a327db7d8e",
                 "control-id": "CIS-5.2.1",
                 "description": "",
                 "props": [
@@ -4581,7 +4581,7 @@
                 ]
               },
               {
-                "uuid": "77d8e120-350e-4fbc-8ed1-4f8de0aac36c",
+                "uuid": "c9101867-f975-4e12-b8ad-7a0cc3a0500b",
                 "control-id": "CIS-5.2.2",
                 "description": "",
                 "props": [
@@ -4597,7 +4597,7 @@
                 ]
               },
               {
-                "uuid": "c97abe5b-5a66-4a05-bb5a-6c8982faa6b6",
+                "uuid": "292c4b1d-d827-4a97-a066-42fca0a0b1ba",
                 "control-id": "CIS-5.2.3",
                 "description": "",
                 "props": [
@@ -4613,7 +4613,7 @@
                 ]
               },
               {
-                "uuid": "847f4cba-3d19-4b8d-95e9-7ec7e09e8850",
+                "uuid": "822306a3-d248-4fc3-8fe7-71a337160351",
                 "control-id": "CIS-5.2.4",
                 "description": "",
                 "props": [
@@ -4629,7 +4629,7 @@
                 ]
               },
               {
-                "uuid": "43c54ab1-e461-485f-8e3d-9efc06c7a463",
+                "uuid": "18305ced-be61-4bd6-afa9-dd17ae50537a",
                 "control-id": "CIS-5.2.5",
                 "description": "",
                 "props": [
@@ -4645,7 +4645,7 @@
                 ]
               },
               {
-                "uuid": "b8969c2f-3261-4e17-81c4-bea4964a7c9c",
+                "uuid": "20d85a3b-1372-4bdd-bc50-65e249528856",
                 "control-id": "CIS-5.2.6",
                 "description": "",
                 "props": [
@@ -4661,7 +4661,7 @@
                 ]
               },
               {
-                "uuid": "af6d569e-a0bd-4a57-a541-548d4a10e8aa",
+                "uuid": "7e1d0b4d-f468-4493-aefa-55c3072b0fe3",
                 "control-id": "CIS-5.2.7",
                 "description": "",
                 "props": [
@@ -4677,7 +4677,7 @@
                 ]
               },
               {
-                "uuid": "5b5cfd51-bc33-482c-b5dd-89d8fefc546e",
+                "uuid": "54b49310-e5bd-4947-8f53-f923df548154",
                 "control-id": "CIS-5.2.8",
                 "description": "",
                 "props": [
@@ -4693,7 +4693,7 @@
                 ]
               },
               {
-                "uuid": "18bbbb5a-3988-429d-beb5-3e83037f0f69",
+                "uuid": "826bbee0-c16e-4a05-bec8-70bbdea4c965",
                 "control-id": "CIS-5.2.9",
                 "description": "",
                 "props": [
@@ -4709,7 +4709,7 @@
                 ]
               },
               {
-                "uuid": "ced0374a-d510-47b5-b520-c2fa278dfe70",
+                "uuid": "765fcb5f-d62e-413f-824c-95d9063881f9",
                 "control-id": "CIS-5.3.1",
                 "description": "",
                 "props": [
@@ -4725,7 +4725,7 @@
                 ]
               },
               {
-                "uuid": "0f3bb913-3297-4a7a-9937-bb024abf9d5f",
+                "uuid": "e257f6b5-8993-4533-8e25-a58b82df2b59",
                 "control-id": "CIS-5.3.2",
                 "description": "",
                 "props": [
@@ -4741,7 +4741,7 @@
                 ]
               },
               {
-                "uuid": "9aa4a1ab-0d45-43b4-9de5-d267e29115e7",
+                "uuid": "5ae30b0c-610c-4983-96d8-d820d34a04a0",
                 "control-id": "CIS-5.4.1",
                 "description": "",
                 "props": [
@@ -4757,7 +4757,7 @@
                 ]
               },
               {
-                "uuid": "419360ea-4eff-43b1-ae7f-1e600e1a2301",
+                "uuid": "c5ea25d2-9467-43c0-a33a-9d36631772af",
                 "control-id": "CIS-5.4.2",
                 "description": "",
                 "props": [
@@ -4773,7 +4773,7 @@
                 ]
               },
               {
-                "uuid": "d47d2feb-5d84-45b7-a052-a27832b4556a",
+                "uuid": "b54d6969-766a-4d78-9656-505440b1c2ad",
                 "control-id": "CIS-5.5.1",
                 "description": "",
                 "props": [
@@ -4789,7 +4789,7 @@
                 ]
               },
               {
-                "uuid": "601b3822-9d97-4c00-a5a5-6f31fc54152c",
+                "uuid": "9b151ebd-8e37-4e0f-999d-5ac6b3c268e2",
                 "control-id": "CIS-5.7.1",
                 "description": "",
                 "props": [
@@ -4805,7 +4805,7 @@
                 ]
               },
               {
-                "uuid": "d0ab86dd-ec40-4f9b-ae69-fdcfae9231a1",
+                "uuid": "397728f4-ad40-4ce8-9f53-517163610281",
                 "control-id": "CIS-5.7.2",
                 "description": "",
                 "props": [
@@ -4821,7 +4821,7 @@
                 ]
               },
               {
-                "uuid": "8331eeca-8c15-4c07-a006-0244bba1e91e",
+                "uuid": "e50c170e-7fbf-4f93-918b-7315749dbd78",
                 "control-id": "CIS-5.7.3",
                 "description": "",
                 "props": [
@@ -4837,7 +4837,7 @@
                 ]
               },
               {
-                "uuid": "29e3352f-a329-4ceb-a3b4-10d3f760f825",
+                "uuid": "9d917213-f468-4005-818e-89f931d04273",
                 "control-id": "CIS-5.7.4",
                 "description": "",
                 "props": [
@@ -4857,7 +4857,7 @@
         ]
       },
       {
-        "uuid": "ff645692-1a3a-4118-a918-4c704ad8e926",
+        "uuid": "add37e3f-d811-420d-ba0f-2d484baa67db",
         "type": "validation",
         "title": "OSCO",
         "description": "OSCO",
@@ -9761,12 +9761,12 @@
         ],
         "control-implementations": [
           {
-            "uuid": "0c6bf838-fe95-46dc-bef1-d0ce2d058304",
+            "uuid": "6781437a-9f63-4df8-b15c-15ba252712ff",
             "source": "profiles/OCP4_CIS_NODE/profile.json",
             "description": "OCP4 CIS Node Profile",
             "implemented-requirements": [
               {
-                "uuid": "3ba4d2a4-7d4d-46fe-8d0e-2e1d63ac4b46",
+                "uuid": "4ec266cf-b8cd-4324-b610-6f6d5fd01ce5",
                 "control-id": "CIS-1.1.1",
                 "description": "",
                 "props": [
@@ -9782,7 +9782,7 @@
                 ]
               },
               {
-                "uuid": "594f013b-76c9-4a41-9e5a-4355d06dff35",
+                "uuid": "172af8d9-985f-470f-ba53-91ce534ed177",
                 "control-id": "CIS-1.1.2",
                 "description": "",
                 "props": [
@@ -9803,7 +9803,7 @@
                 ]
               },
               {
-                "uuid": "26e7295c-74bc-4c70-b5c6-33a52a10bb06",
+                "uuid": "6c7e1901-3f39-45e8-93af-1f03a6157dd5",
                 "control-id": "CIS-1.1.3",
                 "description": "",
                 "props": [
@@ -9819,7 +9819,7 @@
                 ]
               },
               {
-                "uuid": "3e476f19-7c62-4513-a63a-ba4d49d5d339",
+                "uuid": "fdf17de3-1da0-422b-b1dd-7c0cc009bdf3",
                 "control-id": "CIS-1.1.4",
                 "description": "",
                 "props": [
@@ -9840,7 +9840,7 @@
                 ]
               },
               {
-                "uuid": "a6964580-b908-41b5-822d-52b1f3cded9a",
+                "uuid": "17b22744-944d-4d18-a024-4a84a9ae1ce4",
                 "control-id": "CIS-1.1.5",
                 "description": "",
                 "props": [
@@ -9856,7 +9856,7 @@
                 ]
               },
               {
-                "uuid": "36dc1639-0360-42d8-b3e9-aacf6a7c6056",
+                "uuid": "caa97ba4-a1c5-47b4-ab98-47b7536147bd",
                 "control-id": "CIS-1.1.6",
                 "description": "",
                 "props": [
@@ -9877,7 +9877,7 @@
                 ]
               },
               {
-                "uuid": "a57ab456-e82f-4bb9-9521-42fc97f6529a",
+                "uuid": "a43c0b81-1667-4321-839d-12c857fd2931",
                 "control-id": "CIS-1.1.7",
                 "description": "",
                 "props": [
@@ -9893,7 +9893,7 @@
                 ]
               },
               {
-                "uuid": "5a64c7ba-1f57-4784-8228-697f821f6fd0",
+                "uuid": "36b29b6f-56c1-4506-aa46-b954b068ce5f",
                 "control-id": "CIS-1.1.8",
                 "description": "",
                 "props": [
@@ -9914,7 +9914,7 @@
                 ]
               },
               {
-                "uuid": "1778995b-098c-470e-a2d3-4436d8a59026",
+                "uuid": "63342799-c52a-4738-89ea-87f653a913ed",
                 "control-id": "CIS-1.1.9",
                 "description": "",
                 "props": [
@@ -9985,7 +9985,7 @@
                 ]
               },
               {
-                "uuid": "7ec5470e-4148-419a-9909-3caff05c322b",
+                "uuid": "f0c6c4ea-0580-4491-9078-39fdda270c30",
                 "control-id": "CIS-1.1.10",
                 "description": "",
                 "props": [
@@ -10116,7 +10116,7 @@
                 ]
               },
               {
-                "uuid": "527593da-8e13-49c2-a961-db30f02c5c07",
+                "uuid": "c5f6fe92-0ff4-492f-b453-3774e812d185",
                 "control-id": "CIS-1.1.11",
                 "description": "",
                 "props": [
@@ -10137,7 +10137,7 @@
                 ]
               },
               {
-                "uuid": "d2b7bca7-41ee-4c90-89db-5069d69c056a",
+                "uuid": "ba13fb85-ffaa-4fd2-997e-0a39df252d6d",
                 "control-id": "CIS-1.1.12",
                 "description": "",
                 "props": [
@@ -10168,7 +10168,7 @@
                 ]
               },
               {
-                "uuid": "680c43fc-0c32-40f3-b089-888a3fbaadce",
+                "uuid": "a81070d0-f1dc-4c68-b3b1-f1499824fd67",
                 "control-id": "CIS-1.1.13",
                 "description": "",
                 "props": [
@@ -10184,7 +10184,7 @@
                 ]
               },
               {
-                "uuid": "f8ebe8ea-3481-4079-8b52-dfcd7ca2c77b",
+                "uuid": "fa43e9d7-49e6-4977-9289-232de3b755fd",
                 "control-id": "CIS-1.1.14",
                 "description": "",
                 "props": [
@@ -10205,7 +10205,7 @@
                 ]
               },
               {
-                "uuid": "53dbe77a-0023-4a20-be3f-5c97731c3437",
+                "uuid": "b85bcb6d-f56f-47a8-91af-b848ed9e81a7",
                 "control-id": "CIS-1.1.15",
                 "description": "",
                 "props": [
@@ -10221,7 +10221,7 @@
                 ]
               },
               {
-                "uuid": "e6c6dec8-84fd-4b85-b916-29b2d88dbee9",
+                "uuid": "89bb8e51-4cd5-4609-a2d6-f24cc354a94b",
                 "control-id": "CIS-1.1.16",
                 "description": "",
                 "props": [
@@ -10242,7 +10242,7 @@
                 ]
               },
               {
-                "uuid": "26318fb4-0416-4437-baf3-a46c6356d377",
+                "uuid": "996e7619-8605-44e2-9ffe-f8e502ae409f",
                 "control-id": "CIS-1.1.17",
                 "description": "",
                 "props": [
@@ -10258,7 +10258,7 @@
                 ]
               },
               {
-                "uuid": "6822cc14-b6a5-4644-9a5d-4dc280cf40e0",
+                "uuid": "3c2ff7a9-624a-4451-b923-3126275e42c9",
                 "control-id": "CIS-1.1.18",
                 "description": "",
                 "props": [
@@ -10279,7 +10279,7 @@
                 ]
               },
               {
-                "uuid": "c77c49e7-c656-44b3-a365-1f699e9c9684",
+                "uuid": "9bdca3ee-ac14-47da-a47e-af510e2325d0",
                 "control-id": "CIS-1.1.19",
                 "description": "",
                 "props": [
@@ -10320,7 +10320,7 @@
                 ]
               },
               {
-                "uuid": "c40b567a-1f52-4ee9-a469-badb13f80a67",
+                "uuid": "75206b63-058e-4fc9-9e0f-c81df7d2458e",
                 "control-id": "CIS-1.1.20",
                 "description": "",
                 "props": [
@@ -10341,7 +10341,7 @@
                 ]
               },
               {
-                "uuid": "616fe238-eaae-4cc7-b3bf-918353edbec2",
+                "uuid": "e6b524c9-55e1-41a4-a0e7-0ddf410ec593",
                 "control-id": "CIS-1.1.21",
                 "description": "",
                 "props": [
@@ -10357,7 +10357,7 @@
                 ]
               },
               {
-                "uuid": "fb814222-01b3-4fb3-8886-8bb28d6e29ec",
+                "uuid": "cccb48b2-2267-45ca-b02b-2150d6e4b087",
                 "control-id": "CIS-2.7",
                 "description": "",
                 "props": [
@@ -10373,7 +10373,7 @@
                 ]
               },
               {
-                "uuid": "27d92445-160c-4dc7-aa1f-e0b053e6895b",
+                "uuid": "380811aa-3588-4582-9400-4857ee902a74",
                 "control-id": "CIS-4.1.1",
                 "description": "",
                 "props": [
@@ -10389,7 +10389,7 @@
                 ]
               },
               {
-                "uuid": "53642f51-53d2-474c-bf28-fee350a60a58",
+                "uuid": "903ac41d-e56c-4730-97f6-6163ecf04622",
                 "control-id": "CIS-4.1.2",
                 "description": "",
                 "props": [
@@ -10410,7 +10410,7 @@
                 ]
               },
               {
-                "uuid": "4aa7971a-4f53-4416-819a-f1b4aa05be78",
+                "uuid": "24f135c8-18b9-4747-9b8f-7e602bcd83b3",
                 "control-id": "CIS-4.1.5",
                 "description": "",
                 "props": [
@@ -10426,7 +10426,7 @@
                 ]
               },
               {
-                "uuid": "eaf26762-d6c2-4c4d-a259-42ff2c5e76ff",
+                "uuid": "8a960af8-d2ff-4ca1-9d96-527ce667891d",
                 "control-id": "CIS-4.1.6",
                 "description": "",
                 "props": [
@@ -10457,7 +10457,7 @@
                 ]
               },
               {
-                "uuid": "7c1dab2f-a17b-4068-ac38-021a14542707",
+                "uuid": "33659470-c6fd-4ee8-a6ac-c0a2127c534b",
                 "control-id": "CIS-4.1.7",
                 "description": "",
                 "props": [
@@ -10473,7 +10473,7 @@
                 ]
               },
               {
-                "uuid": "a1a8e22f-8671-4cc5-9128-ac0fd89d20f9",
+                "uuid": "bf491c48-67e5-4b1b-a299-ba7096173a25",
                 "control-id": "CIS-4.1.8",
                 "description": "",
                 "props": [
@@ -10494,7 +10494,7 @@
                 ]
               },
               {
-                "uuid": "13ac5342-9156-4eb1-8e9f-06d9e4b0db6f",
+                "uuid": "cffa53d3-962c-4300-bd78-52a9f41b9264",
                 "control-id": "CIS-4.1.9",
                 "description": "",
                 "props": [
@@ -10510,7 +10510,7 @@
                 ]
               },
               {
-                "uuid": "c68215b2-607b-4c6a-a0ea-6c52e513458c",
+                "uuid": "8c2e4ab2-bfd3-4558-a99b-f459b7c1239b",
                 "control-id": "CIS-4.1.10",
                 "description": "",
                 "props": [
@@ -10531,7 +10531,7 @@
                 ]
               },
               {
-                "uuid": "7cc845b8-3b33-4ca3-a75e-61a1a26d38dc",
+                "uuid": "fde74f5e-22cb-4b69-8e1e-826bdbfdb93c",
                 "control-id": "CIS-4.2.6",
                 "description": "",
                 "props": [
@@ -10554,7 +10554,7 @@
             ]
           },
           {
-            "uuid": "9fb80ae6-70fc-48a3-bfe3-29748009ce84",
+            "uuid": "67344afe-607d-4ba4-8d76-97ebb480551a",
             "source": "profiles/OCP4_CIS/profile.json",
             "description": "OCP4 CIS Profile",
             "set-parameters": [
@@ -10585,7 +10585,7 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "2e9afa64-6b7f-41cb-8e2a-775f66f70905",
+                "uuid": "8adef24b-3c04-4c2d-9d9d-1cdb17e9168e",
                 "control-id": "CIS-1.2.1",
                 "description": "",
                 "props": [
@@ -10601,7 +10601,7 @@
                 ]
               },
               {
-                "uuid": "c9b444f9-feaf-4ed3-ab4a-ba4b53e0bb48",
+                "uuid": "dfb2d063-ef78-4294-8fb5-c414e7e65751",
                 "control-id": "CIS-1.2.2",
                 "description": "",
                 "props": [
@@ -10617,7 +10617,7 @@
                 ]
               },
               {
-                "uuid": "b799d820-fc4f-45bd-b36d-c95609b73a59",
+                "uuid": "e8eb0992-26ee-4a1c-b955-34dc4add9bfc",
                 "control-id": "CIS-1.2.3",
                 "description": "",
                 "props": [
@@ -10633,7 +10633,7 @@
                 ]
               },
               {
-                "uuid": "a9375d09-d675-4a0e-bae3-471ad690eabe",
+                "uuid": "e60ab8ff-594c-4c52-9fc0-0040b2056a20",
                 "control-id": "CIS-1.2.4",
                 "description": "",
                 "props": [
@@ -10659,7 +10659,7 @@
                 ]
               },
               {
-                "uuid": "2466b7c1-29a8-4f5d-ac45-ab90a919a222",
+                "uuid": "00e68c10-f6e0-45f9-8c9e-b70bce7179d9",
                 "control-id": "CIS-1.2.5",
                 "description": "",
                 "props": [
@@ -10690,7 +10690,7 @@
                 ]
               },
               {
-                "uuid": "2a245987-305a-45c1-ad57-21ef54214162",
+                "uuid": "6be2d669-cdcc-4e7c-84c6-7bba4764968d",
                 "control-id": "CIS-1.2.6",
                 "description": "",
                 "props": [
@@ -10706,7 +10706,7 @@
                 ]
               },
               {
-                "uuid": "346653ef-85e8-43ce-885b-e7b76fd6319a",
+                "uuid": "a84332c1-7969-4541-a76a-61d0d8074b38",
                 "control-id": "CIS-1.2.7",
                 "description": "",
                 "props": [
@@ -10722,7 +10722,7 @@
                 ]
               },
               {
-                "uuid": "505c45c6-4aa8-4239-a2c3-1ec881b70a42",
+                "uuid": "dbd7fcdf-c9ac-4875-88fb-18935f8b2c7e",
                 "control-id": "CIS-1.2.8",
                 "description": "",
                 "props": [
@@ -10738,7 +10738,7 @@
                 ]
               },
               {
-                "uuid": "7345deb1-a451-4786-8400-406b96892881",
+                "uuid": "f05fd244-61a6-4ef8-99f6-36f1e51a23d5",
                 "control-id": "CIS-1.2.9",
                 "description": "",
                 "props": [
@@ -10754,7 +10754,7 @@
                 ]
               },
               {
-                "uuid": "d98bd9fc-5790-46f6-91d8-b5e11a9d0a0b",
+                "uuid": "7784b1cb-f4ec-448a-9b00-bb14e2a64553",
                 "control-id": "CIS-1.2.10",
                 "description": "",
                 "props": [
@@ -10775,7 +10775,7 @@
                 ]
               },
               {
-                "uuid": "c147250e-0f75-4ac0-9f2a-3f9ab77279cd",
+                "uuid": "8b1e0360-f87e-4d48-85ce-e40edfbbafda",
                 "control-id": "CIS-1.2.11",
                 "description": "",
                 "props": [
@@ -10791,7 +10791,7 @@
                 ]
               },
               {
-                "uuid": "ff707418-302b-4a86-9ba6-b7fdde14b103",
+                "uuid": "3868ce36-adff-4150-8253-363e5e96425c",
                 "control-id": "CIS-1.2.12",
                 "description": "",
                 "props": [
@@ -10807,7 +10807,7 @@
                 ]
               },
               {
-                "uuid": "0067b4f8-74d6-4760-b2cc-bf7d5b38450c",
+                "uuid": "936082bc-d4eb-4849-82b5-f28c4aa318c3",
                 "control-id": "CIS-1.2.13",
                 "description": "",
                 "props": [
@@ -10823,7 +10823,7 @@
                 ]
               },
               {
-                "uuid": "b53ff75f-daff-440d-ad24-4f0cadcd9e4d",
+                "uuid": "0b08ca84-7f73-47e7-adc5-1000d5460968",
                 "control-id": "CIS-1.2.14",
                 "description": "",
                 "props": [
@@ -10844,7 +10844,7 @@
                 ]
               },
               {
-                "uuid": "3f741a6c-10d3-4009-8ac6-10070455cc96",
+                "uuid": "7f25288b-52e0-4d3c-93d3-0b88af486f1c",
                 "control-id": "CIS-1.2.15",
                 "description": "",
                 "props": [
@@ -10860,7 +10860,7 @@
                 ]
               },
               {
-                "uuid": "13e0903d-6fe9-4adb-828b-4cd886e81b1f",
+                "uuid": "62ac8c1d-c64e-4bd2-a62b-0e423a2602f6",
                 "control-id": "CIS-1.2.16",
                 "description": "",
                 "props": [
@@ -10876,7 +10876,7 @@
                 ]
               },
               {
-                "uuid": "f92acaba-5b1f-4de1-bfa5-cbc8ce19cede",
+                "uuid": "e8870dd2-69ae-4ca4-9730-cdfc1d5ef0a6",
                 "control-id": "CIS-1.2.17",
                 "description": "",
                 "props": [
@@ -10892,7 +10892,7 @@
                 ]
               },
               {
-                "uuid": "754740fb-ac28-4ee9-b93a-22de3a079ba9",
+                "uuid": "7f6a2bdc-00c7-415c-9ea8-975ddb22bde6",
                 "control-id": "CIS-1.2.18",
                 "description": "",
                 "props": [
@@ -10908,7 +10908,7 @@
                 ]
               },
               {
-                "uuid": "5e5e39fb-0a29-4446-95bc-32ef4a5cb198",
+                "uuid": "cdcd196b-b5d9-48ca-b70f-f45283ee5ca9",
                 "control-id": "CIS-1.2.19",
                 "description": "",
                 "props": [
@@ -10924,7 +10924,7 @@
                 ]
               },
               {
-                "uuid": "226ff1cc-54d1-4609-aa30-c19f47aa156e",
+                "uuid": "5b0e9017-1622-464e-a575-ac3b8eab5821",
                 "control-id": "CIS-1.2.20",
                 "description": "",
                 "props": [
@@ -10940,7 +10940,7 @@
                 ]
               },
               {
-                "uuid": "2e2b9692-d20e-4261-aa1c-688be81e2377",
+                "uuid": "8a977759-8d1a-4d18-9fda-2f994f7a55c2",
                 "control-id": "CIS-1.2.21",
                 "description": "",
                 "props": [
@@ -10956,7 +10956,7 @@
                 ]
               },
               {
-                "uuid": "9a138b8a-0c11-4c25-a323-1caafffddba1",
+                "uuid": "2e37a099-a2dc-4824-a785-fce6f6171f30",
                 "control-id": "CIS-1.2.22",
                 "description": "",
                 "props": [
@@ -10977,7 +10977,7 @@
                 ]
               },
               {
-                "uuid": "99e80f5c-66a3-4573-aa7e-588ba1c1dc8e",
+                "uuid": "b92e3d7d-f52b-48c3-9985-b57dbf9b517b",
                 "control-id": "CIS-1.2.23",
                 "description": "",
                 "props": [
@@ -10993,7 +10993,7 @@
                 ]
               },
               {
-                "uuid": "5c439d12-5bda-4395-b3d7-78259b084b14",
+                "uuid": "cf40a889-6670-4673-b040-e5ab719f64ad",
                 "control-id": "CIS-1.2.24",
                 "description": "",
                 "props": [
@@ -11014,7 +11014,7 @@
                 ]
               },
               {
-                "uuid": "d6041c7a-8fdb-4990-abbc-8980fb48326e",
+                "uuid": "47b385b5-f19b-471e-9e63-0f9324f96562",
                 "control-id": "CIS-1.2.25",
                 "description": "",
                 "props": [
@@ -11035,7 +11035,7 @@
                 ]
               },
               {
-                "uuid": "6ca8ae8a-ba03-4f8b-8afd-95d58adc3845",
+                "uuid": "e6dbb974-8b70-488c-a522-b114fac4f3a7",
                 "control-id": "CIS-1.2.26",
                 "description": "",
                 "props": [
@@ -11051,7 +11051,7 @@
                 ]
               },
               {
-                "uuid": "77305560-0f9a-48bd-bc44-fea6101f2837",
+                "uuid": "876c027c-912a-46fd-9004-9d7017b553f6",
                 "control-id": "CIS-1.2.27",
                 "description": "",
                 "props": [
@@ -11067,7 +11067,7 @@
                 ]
               },
               {
-                "uuid": "eb662f55-1b68-49c9-9a6c-165623b8d747",
+                "uuid": "e6390325-d12d-40ce-a7e1-92892027fbf1",
                 "control-id": "CIS-1.2.28",
                 "description": "",
                 "props": [
@@ -11083,7 +11083,7 @@
                 ]
               },
               {
-                "uuid": "63f39de1-8a21-4ec4-9a74-af4e5e7c1df3",
+                "uuid": "a79f0969-14bd-4853-82fc-aa97533d690a",
                 "control-id": "CIS-1.2.29",
                 "description": "",
                 "props": [
@@ -11104,7 +11104,7 @@
                 ]
               },
               {
-                "uuid": "87339ab4-437a-4afc-bc34-88dbab103003",
+                "uuid": "7f496d34-b948-414f-9f29-d601da16f828",
                 "control-id": "CIS-1.2.30",
                 "description": "",
                 "props": [
@@ -11125,7 +11125,7 @@
                 ]
               },
               {
-                "uuid": "f3b38fe1-0a1b-4239-a064-92c2bc3eb20e",
+                "uuid": "4b6c0bf2-a639-4669-9c66-a3c422a15c74",
                 "control-id": "CIS-1.2.31",
                 "description": "",
                 "props": [
@@ -11141,7 +11141,7 @@
                 ]
               },
               {
-                "uuid": "0aa615b1-0dbc-4077-b7d3-28ebb95edcf0",
+                "uuid": "03879c1c-9244-4264-86f6-c580d2c70a3a",
                 "control-id": "CIS-1.2.32",
                 "description": "",
                 "props": [
@@ -11157,7 +11157,7 @@
                 ]
               },
               {
-                "uuid": "846777c1-2468-46a7-8883-53f42b3b5ed8",
+                "uuid": "a756630f-1579-453d-a43d-b84ff99ee8cc",
                 "control-id": "CIS-1.2.33",
                 "description": "",
                 "props": [
@@ -11173,7 +11173,7 @@
                 ]
               },
               {
-                "uuid": "ecb1b397-a117-425c-94bf-9ca1d20f78a8",
+                "uuid": "5b28b447-04c8-4981-9a58-d0abc4d9ebe9",
                 "control-id": "CIS-1.2.34",
                 "description": "",
                 "props": [
@@ -11189,7 +11189,7 @@
                 ]
               },
               {
-                "uuid": "ab9ae5bc-4c7c-4707-b81a-11528a237518",
+                "uuid": "9c9cc273-aea7-4d5b-a8f6-14a0077e0423",
                 "control-id": "CIS-1.2.35",
                 "description": "",
                 "props": [
@@ -11205,7 +11205,7 @@
                 ]
               },
               {
-                "uuid": "9f852fd4-2c0e-4f85-a9f0-94e0119a869f",
+                "uuid": "90af9e75-c355-4e54-bb7e-43d8952f34e2",
                 "control-id": "CIS-1.3.1",
                 "description": "",
                 "props": [
@@ -11236,7 +11236,7 @@
                 ]
               },
               {
-                "uuid": "828bda3d-1664-470c-b2b9-db270bb0d05b",
+                "uuid": "a59919b0-141e-4380-8b55-d5d3624e3eff",
                 "control-id": "CIS-1.3.2",
                 "description": "",
                 "props": [
@@ -11252,7 +11252,7 @@
                 ]
               },
               {
-                "uuid": "15882e4b-e594-4d4b-bd33-41f8bebe1b24",
+                "uuid": "3d9a6dcc-aed7-4412-b144-9be4a3c12f66",
                 "control-id": "CIS-1.3.3",
                 "description": "",
                 "props": [
@@ -11268,7 +11268,7 @@
                 ]
               },
               {
-                "uuid": "c5a0dc6b-53ac-482d-9c72-f778e4dd823d",
+                "uuid": "2f47f8f9-a5b9-4f46-8168-2f0cafd938be",
                 "control-id": "CIS-1.3.4",
                 "description": "",
                 "props": [
@@ -11284,7 +11284,7 @@
                 ]
               },
               {
-                "uuid": "8c27908d-4584-465a-b632-f20a4f4fe1c3",
+                "uuid": "3efdcf4a-c18b-4c7e-bd90-14512241d6a4",
                 "control-id": "CIS-1.3.5",
                 "description": "",
                 "props": [
@@ -11300,7 +11300,7 @@
                 ]
               },
               {
-                "uuid": "02bb1308-d64b-4131-807d-7e9454b1f266",
+                "uuid": "57ce98cb-ac13-427b-a710-6ed924099984",
                 "control-id": "CIS-1.3.6",
                 "description": "",
                 "props": [
@@ -11316,7 +11316,7 @@
                 ]
               },
               {
-                "uuid": "c247e8b0-6a2b-4e74-a9c5-145590f33e39",
+                "uuid": "089b2568-eb36-4d76-8798-27d69ced8655",
                 "control-id": "CIS-1.3.7",
                 "description": "",
                 "props": [
@@ -11337,7 +11337,7 @@
                 ]
               },
               {
-                "uuid": "52bd200c-a882-4a69-a201-ffa9ad800d45",
+                "uuid": "de900ff0-2c3f-4bb9-a9c2-0a0f456450f6",
                 "control-id": "CIS-1.4.2",
                 "description": "",
                 "props": [
@@ -11353,7 +11353,7 @@
                 ]
               },
               {
-                "uuid": "52360918-fb16-467c-b112-1ecc228eaefe",
+                "uuid": "600b5017-129b-4bb5-9d6d-67b0571c57ef",
                 "control-id": "CIS-2.1",
                 "description": "",
                 "props": [
@@ -11374,7 +11374,7 @@
                 ]
               },
               {
-                "uuid": "99b95f61-2d11-4115-95c6-1bff1f6d5dc9",
+                "uuid": "e4fed512-502d-4834-b7e7-22561cd60465",
                 "control-id": "CIS-2.2",
                 "description": "",
                 "props": [
@@ -11390,7 +11390,7 @@
                 ]
               },
               {
-                "uuid": "4aa9dca2-c88b-4c93-82e5-dbdc2e42d7ec",
+                "uuid": "ccbd3a00-b23d-433c-b6bc-0928ba264007",
                 "control-id": "CIS-2.3",
                 "description": "",
                 "props": [
@@ -11406,7 +11406,7 @@
                 ]
               },
               {
-                "uuid": "3c3cd767-2a76-4257-a0bf-b9d11a19131e",
+                "uuid": "8e0ae86b-e0c6-4407-a095-1b66a64ba3eb",
                 "control-id": "CIS-2.4",
                 "description": "",
                 "props": [
@@ -11427,7 +11427,7 @@
                 ]
               },
               {
-                "uuid": "c5bc4358-2dbc-4b09-8386-11262d149827",
+                "uuid": "dbbaffc3-823a-4bc7-b68d-c7f4906c8483",
                 "control-id": "CIS-2.5",
                 "description": "",
                 "props": [
@@ -11443,7 +11443,7 @@
                 ]
               },
               {
-                "uuid": "3d820273-670f-430d-b96d-3174eef3a69a",
+                "uuid": "c7937e32-cc0f-40a7-b8a5-82e658e4f44a",
                 "control-id": "CIS-2.6",
                 "description": "",
                 "props": [
@@ -11459,7 +11459,7 @@
                 ]
               },
               {
-                "uuid": "7921bfa9-1a23-4370-b35e-eedfd77ec500",
+                "uuid": "31661699-676b-4bc3-80eb-b6c82fecb1e9",
                 "control-id": "CIS-3.1.1",
                 "description": "",
                 "props": [
@@ -11480,7 +11480,7 @@
                 ]
               },
               {
-                "uuid": "5ab68ae0-4eee-4675-aa86-7c491df85591",
+                "uuid": "03be7e37-b458-4387-b315-aeadfadf5d27",
                 "control-id": "CIS-3.2.2",
                 "description": "",
                 "props": [
@@ -11496,7 +11496,7 @@
                 ]
               },
               {
-                "uuid": "a9d28aaf-79ed-4f83-84f0-e05d525f8ae5",
+                "uuid": "62c5f54c-ebfc-4247-af7a-61593b9a84f7",
                 "control-id": "CIS-4.1.3",
                 "description": "",
                 "props": [
@@ -11512,7 +11512,7 @@
                 ]
               },
               {
-                "uuid": "a067183d-a07b-4035-9dac-814bd31aa504",
+                "uuid": "6eb734f2-f334-4d52-9f63-d882167178c4",
                 "control-id": "CIS-4.1.4",
                 "description": "",
                 "props": [
@@ -11533,7 +11533,7 @@
                 ]
               },
               {
-                "uuid": "cb96c5ec-d092-4dd4-a1ee-bd9ef0083c6a",
+                "uuid": "c48b0056-51e7-4f17-93d4-51d6a944b6e9",
                 "control-id": "CIS-4.2.1",
                 "description": "",
                 "props": [
@@ -11549,7 +11549,7 @@
                 ]
               },
               {
-                "uuid": "5ba2465c-d3d2-42a4-a862-3da4dccd1fe7",
+                "uuid": "508692c5-27bb-4266-b65c-b38ca52b6640",
                 "control-id": "CIS-4.2.2",
                 "description": "",
                 "props": [
@@ -11565,7 +11565,7 @@
                 ]
               },
               {
-                "uuid": "bc16d138-c285-4252-99e1-88280295b219",
+                "uuid": "c6aea74b-0d7e-4cd2-a4d5-2ebe8f8d395f",
                 "control-id": "CIS-4.2.3",
                 "description": "",
                 "props": [
@@ -11581,7 +11581,7 @@
                 ]
               },
               {
-                "uuid": "a5ebb5fd-5201-42a1-91a3-0d14dd6bae93",
+                "uuid": "16effe5e-f509-4fc7-85c3-702db8c4557f",
                 "control-id": "CIS-4.2.4",
                 "description": "",
                 "props": [
@@ -11597,7 +11597,7 @@
                 ]
               },
               {
-                "uuid": "b62b4635-57de-4106-a564-f9b613155dde",
+                "uuid": "7143938e-1974-41c0-a8f3-55b050804a51",
                 "control-id": "CIS-4.2.5",
                 "description": "",
                 "props": [
@@ -11613,7 +11613,7 @@
                 ]
               },
               {
-                "uuid": "5d5c7af3-ab5a-4867-8cea-c0c424ef5440",
+                "uuid": "49b9210d-c5b0-4d66-b979-e598d093c71e",
                 "control-id": "CIS-4.2.7",
                 "description": "",
                 "props": [
@@ -11629,7 +11629,7 @@
                 ]
               },
               {
-                "uuid": "090bf02d-5377-49cf-aebb-a3069ce95f8f",
+                "uuid": "8272d155-7cd4-4fce-96f9-1e57a8d470bc",
                 "control-id": "CIS-4.2.9",
                 "description": "",
                 "props": [
@@ -11645,7 +11645,7 @@
                 ]
               },
               {
-                "uuid": "98919d1b-0ba9-4f14-b44c-b49ebd9864f9",
+                "uuid": "516753ea-1ad3-49da-8850-126b26375724",
                 "control-id": "CIS-4.2.10",
                 "description": "",
                 "props": [
@@ -11676,7 +11676,7 @@
                 ]
               },
               {
-                "uuid": "bcec11ff-9740-492e-916c-d144c4b057a5",
+                "uuid": "cf09612b-c153-4beb-be5f-1d1233f4210c",
                 "control-id": "CIS-4.2.11",
                 "description": "",
                 "props": [
@@ -11697,7 +11697,7 @@
                 ]
               },
               {
-                "uuid": "093d3686-06e5-47e2-b911-4f3c8ec5654a",
+                "uuid": "91cd79b6-816c-40e6-94f5-e179458e55a3",
                 "control-id": "CIS-4.2.12",
                 "description": "",
                 "props": [
@@ -11713,7 +11713,7 @@
                 ]
               },
               {
-                "uuid": "34b7553a-66cf-46b6-b08a-5c194507e88d",
+                "uuid": "0e4464d3-e2a0-4fc2-8308-283c53e47854",
                 "control-id": "CIS-4.2.13",
                 "description": "",
                 "props": [
@@ -11729,7 +11729,7 @@
                 ]
               },
               {
-                "uuid": "a7fce191-221e-4d9a-adcb-ab4d2aa6e4db",
+                "uuid": "07ea0c86-ab44-4050-92f2-93489e889704",
                 "control-id": "CIS-5.1.1",
                 "description": "",
                 "props": [
@@ -11745,7 +11745,7 @@
                 ]
               },
               {
-                "uuid": "ba2113d0-2efb-4457-ae02-31724fc2e70f",
+                "uuid": "7041e308-e89c-4bfa-958f-7470bcdb3fed",
                 "control-id": "CIS-5.1.2",
                 "description": "",
                 "props": [
@@ -11761,7 +11761,7 @@
                 ]
               },
               {
-                "uuid": "20ca5f50-6f4b-4455-93a6-9f960af35628",
+                "uuid": "104d4b3d-a881-4ddd-9120-0fd2ed97da36",
                 "control-id": "CIS-5.1.3",
                 "description": "",
                 "props": [
@@ -11777,7 +11777,7 @@
                 ]
               },
               {
-                "uuid": "9362b890-cd34-49d4-82f4-f85eccb5b569",
+                "uuid": "d937cdfb-eb76-475f-98f5-3a0e6f536df3",
                 "control-id": "CIS-5.1.4",
                 "description": "",
                 "props": [
@@ -11793,7 +11793,7 @@
                 ]
               },
               {
-                "uuid": "29a5a742-b90e-4e24-bef0-21d2fbe19e54",
+                "uuid": "7a9f2073-6c61-4b2b-a472-7be54a9e50fb",
                 "control-id": "CIS-5.1.5",
                 "description": "",
                 "props": [
@@ -11809,7 +11809,7 @@
                 ]
               },
               {
-                "uuid": "6e8db09b-0281-41e0-9da6-30d73dd47481",
+                "uuid": "e2a1090a-daac-4858-938e-bee038a198b0",
                 "control-id": "CIS-5.1.6",
                 "description": "",
                 "props": [
@@ -11825,7 +11825,7 @@
                 ]
               },
               {
-                "uuid": "956165aa-2bfa-430a-a65e-91958b6869c3",
+                "uuid": "c31e1bc6-bce5-42c5-b9b1-bce21d7ab429",
                 "control-id": "CIS-5.2.1",
                 "description": "",
                 "props": [
@@ -11841,7 +11841,7 @@
                 ]
               },
               {
-                "uuid": "bff3badd-fa35-4b2d-995e-7f563a693e5c",
+                "uuid": "b5f94019-a173-4149-827d-c3c9fd981d53",
                 "control-id": "CIS-5.2.2",
                 "description": "",
                 "props": [
@@ -11857,7 +11857,7 @@
                 ]
               },
               {
-                "uuid": "19bea092-091f-4878-ae5f-4dd32de2bb93",
+                "uuid": "191b8d47-35a7-4b51-ac10-5f4d44ea69c4",
                 "control-id": "CIS-5.2.3",
                 "description": "",
                 "props": [
@@ -11873,7 +11873,7 @@
                 ]
               },
               {
-                "uuid": "d6552ba6-aadc-41ae-a2b9-6c833919a589",
+                "uuid": "00b9abaf-e808-4d79-9a80-ab24ef018ed4",
                 "control-id": "CIS-5.2.4",
                 "description": "",
                 "props": [
@@ -11889,7 +11889,7 @@
                 ]
               },
               {
-                "uuid": "4304889a-79c3-4eed-ae86-dc7bbe79010c",
+                "uuid": "b86703d3-947a-4927-baf0-abbdfbffae1a",
                 "control-id": "CIS-5.2.5",
                 "description": "",
                 "props": [
@@ -11905,7 +11905,7 @@
                 ]
               },
               {
-                "uuid": "006ba166-36d6-4aca-9922-fe5f0e04af5b",
+                "uuid": "d2f6fa4f-1307-4f79-8ca7-ba5478dbeea1",
                 "control-id": "CIS-5.2.6",
                 "description": "",
                 "props": [
@@ -11921,7 +11921,7 @@
                 ]
               },
               {
-                "uuid": "d20f2f1c-b63a-47ee-920e-9f370c1d9d01",
+                "uuid": "88206bff-2e33-4c64-be29-54f6154fe731",
                 "control-id": "CIS-5.2.7",
                 "description": "",
                 "props": [
@@ -11937,7 +11937,7 @@
                 ]
               },
               {
-                "uuid": "7582f6ac-913a-4ca6-ab8f-9d56252af23d",
+                "uuid": "bf199058-5b16-4e5b-aca2-1da8a045b384",
                 "control-id": "CIS-5.2.8",
                 "description": "",
                 "props": [
@@ -11953,7 +11953,7 @@
                 ]
               },
               {
-                "uuid": "b2668905-6dbd-49c1-a888-6c3b9c86848e",
+                "uuid": "ba63a35b-0920-4ee4-ba19-af66033736de",
                 "control-id": "CIS-5.2.9",
                 "description": "",
                 "props": [
@@ -11969,7 +11969,7 @@
                 ]
               },
               {
-                "uuid": "73bd784f-ee71-492b-950d-3edad3c2022a",
+                "uuid": "c4d0a6c5-bd94-416d-98dc-451175ba3793",
                 "control-id": "CIS-5.3.1",
                 "description": "",
                 "props": [
@@ -11985,7 +11985,7 @@
                 ]
               },
               {
-                "uuid": "f159c29a-52c9-4d45-81ba-f99ec0041508",
+                "uuid": "3a33fc24-3060-4376-8d41-7493c79e178b",
                 "control-id": "CIS-5.3.2",
                 "description": "",
                 "props": [
@@ -12001,7 +12001,7 @@
                 ]
               },
               {
-                "uuid": "1a375e47-bf88-41e9-a01d-2090bcdcdfe3",
+                "uuid": "8ad08e00-9dc2-432f-ad80-1ae282c7f05c",
                 "control-id": "CIS-5.4.1",
                 "description": "",
                 "props": [
@@ -12017,7 +12017,7 @@
                 ]
               },
               {
-                "uuid": "78aee4b8-802f-40db-9d95-6a5d4fa4ec69",
+                "uuid": "039b21d7-c118-4119-97e7-a41a63aacb6a",
                 "control-id": "CIS-5.4.2",
                 "description": "",
                 "props": [
@@ -12033,7 +12033,7 @@
                 ]
               },
               {
-                "uuid": "bff04845-0c54-41a4-a6f1-7acaf5243ae5",
+                "uuid": "42fdfaf0-2ea9-47ef-b26e-d4c935bebbad",
                 "control-id": "CIS-5.5.1",
                 "description": "",
                 "props": [
@@ -12049,7 +12049,7 @@
                 ]
               },
               {
-                "uuid": "90397913-e5cc-46cf-849d-115b47a5d094",
+                "uuid": "6d4b507c-da63-4786-9792-744a7dd9e17c",
                 "control-id": "CIS-5.7.1",
                 "description": "",
                 "props": [
@@ -12065,7 +12065,7 @@
                 ]
               },
               {
-                "uuid": "7f96fbde-4b08-4ee3-9f6f-948fc25ea0ca",
+                "uuid": "74101410-4bf9-4062-befd-f23bb219d70e",
                 "control-id": "CIS-5.7.2",
                 "description": "",
                 "props": [
@@ -12081,7 +12081,7 @@
                 ]
               },
               {
-                "uuid": "d3594827-3756-4f26-b9b8-c1663652926b",
+                "uuid": "8a825721-3046-4b91-88f0-5edf7e0cfa9e",
                 "control-id": "CIS-5.7.3",
                 "description": "",
                 "props": [
@@ -12097,7 +12097,7 @@
                 ]
               },
               {
-                "uuid": "5113b05d-b9c6-4b3f-9f52-a18adc4bc4a5",
+                "uuid": "fba16a89-e0f2-4757-9f01-eef98cbf89d0",
                 "control-id": "CIS-5.7.4",
                 "description": "",
                 "props": [
