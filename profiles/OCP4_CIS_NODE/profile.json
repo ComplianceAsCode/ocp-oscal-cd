@@ -3,8 +3,8 @@
     "uuid": "881ba6c0-fd9a-41d1-9972-3b602e425597",
     "metadata": {
       "title": "OCP4 CIS Node Profile",
-      "last-modified": "2022-09-19T03:18:55.771601+00:00",
-      "version": "1.0",
+      "last-modified": "2023-02-15T08:52:21.734052+00:00",
+      "version": "0.2.0",
       "oscal-version": "1.0.2"
     },
     "imports": [
@@ -50,6 +50,9 @@
         ]
       }
     ],
+    "merge": {
+      "as-is": true
+    },
     "modify": {
       "alters": []
     }
