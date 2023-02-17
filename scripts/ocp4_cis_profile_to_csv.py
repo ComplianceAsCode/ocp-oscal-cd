@@ -89,7 +89,7 @@ class Mainline:
         self.profile_helpers = []
         self.catalog_helpers = []
 
-    def parse(self) -> dict:
+    def _parse(self) -> dict:
         """Parse."""
         parser = argparse.ArgumentParser(description='Create ocp4.csv from CIS Benchmarks')
         parser.add_argument(
@@ -174,6 +174,7 @@ class Mainline:
         return args
 
     def _is_included(self, control_id: str) -> bool:
+        """Check if control is included."""
         rval = False
         for catalog_helper in self.catalog_helpers:
             if catalog_helper.is_present(control_id):
@@ -204,9 +205,9 @@ class Mainline:
                 set_parameter = (f'var_{rule}', remarks, default_value, options)
         return set_parameter
     
-    def run(self) -> None:
+    def _run(self) -> None:
         """Run."""
-        args = self.parse()
+        args = self._parse()
         # minimally validate input file(s)
         for input_ in args.input:
             file_ = input_[0]
@@ -215,14 +216,14 @@ class Mainline:
             ipath = pathlib.Path(file_)
             if not ipath.is_file():
                 text = f'input file "{file_}" not found'
-                raise Exception(text)
+                raise RuntimeError(text)
             self.profile_helpers.append(CisProfileHelper(file_, url_, desc_))
         # minimally validate catalog file(s)
         for catalog in args.catalog:
             ipath = pathlib.Path(catalog)
             if not ipath.is_file():
                 text = f'catalog file "{catalog}" not found'
-                raise Exception(text)
+                raise RuntimeError(text)
             self.catalog_helpers.append(CisOscalCatalogHelper(ipath))
         # prepare output
         opath = pathlib.Path(args.output)
@@ -302,7 +303,7 @@ class Mainline:
 def main():
     """Create OSCAL profile.json from spread sheet."""
     mainline = Mainline()
-    mainline.run()
+    mainline._run()
 
 
 if __name__ == '__main__':
