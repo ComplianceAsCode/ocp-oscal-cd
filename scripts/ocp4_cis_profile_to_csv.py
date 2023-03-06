@@ -69,17 +69,18 @@ column_descriptions = [
 service_component_title = 'OCP4'
 service_component_description = 'OCP4'
 service_component_type = 'service'
-service_rule_prefix = ''
-service_rule_prefix_help = 'None'
 
 validation_component_title = 'OSCO'
 validation_component_description = 'OSCO'
 validation_component_type = 'validation'
-validation_rule_prefix = ''
-validation_rule_prefix_help = 'None'
+
+check_prefix = ''
+check_prefix_help = 'None'
 
 default_namespace = 'http://ibm.github.io/compliance-trestle/schemas/oscal/cd'
 #default_namespace = 'http://ibm.github.io/compliance-trestle/schemas/oscal/cd/pvp/ocp'
+default_rule2parameter_map = 'None'
+
 
 class Mainline:
     """Main."""
@@ -150,18 +151,18 @@ class Mainline:
             help=f'validation_component_description, default = {validation_component_description}'
         )
         parser.add_argument(
-            '--rule-prefix',
+            '--check-prefix',
             type=str,
             required=False,
-            default=f'{service_rule_prefix}',
-            help=f'rule-prefix, default = {service_rule_prefix_help}'
+            default=f'{check_prefix}',
+            help=f'check-prefix, default = {check_prefix_help}'
         )
         parser.add_argument(
             '--rule-to-parameters-map',
             type=str,
             required=False,
             default=None,
-            help=f'rule-to-parameters-map, default = None'
+            help=f'rule-to-parameters-map, default = {default_rule2parameter_map}'
         )
         parser.add_argument(
             '--namespace',
@@ -181,7 +182,7 @@ class Mainline:
                 rval = True
                 break
         return rval
-    
+
     def _get_parameters_map(self, rule_to_parameters_map: str) -> List[str]:
         """Get parameters map."""
         parameters_map = {}
@@ -192,7 +193,7 @@ class Mainline:
             parameters_map = jdata
             f.close()
         return parameters_map
-    
+
     def _get_set_parameter(self, rule: str) -> tuple:
         """Get set parameter."""
         set_parameter = ('', '', '', '')
@@ -204,7 +205,7 @@ class Mainline:
                 default_value = options['default']
                 set_parameter = (f'var_{rule}', remarks, default_value, options)
         return set_parameter
-    
+
     def _run(self) -> None:
         """Run."""
         args = self._parse()
@@ -243,7 +244,7 @@ class Mainline:
                     for rule in cis_node.rules:
                         rule = rule.strip()
                         sp = self._get_set_parameter(rule)
-                        rule_id = f'{args.rule_prefix}{rule}'
+                        rule_id = f'{rule}'
                         row = [
                             f'{args.service_component_title}',
                             f'{args.service_component_description}',
@@ -273,8 +274,8 @@ class Mainline:
                     for rule in cis_node.rules:
                         rule = rule.strip()
                         sp = self._get_set_parameter(rule)
-                        rule_id = f'{args.rule_prefix}{rule}'
-                        check_id = rule_id
+                        rule_id = f'{rule}'
+                        check_id = f'{args.check_prefix}{rule_id}'
                         check_description = cis_node.description
                         check_description = check_description.replace('Ensure', 'Check')
                         row = [
