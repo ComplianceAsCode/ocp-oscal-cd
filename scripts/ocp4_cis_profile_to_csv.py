@@ -49,21 +49,21 @@ column_names = [
 ]
 
 column_descriptions = [
-    'A human readable name for the component.',
-    'A description of the component including information about its function.',
-    'A category describing the purpose of the component. ALLOWED VALUES interconnection:software:hardware:service:physical:process-procedure:plan:guidance:standard:validation',
-    'A textual label that uniquely identifies a policy (desired state) that can be used to reference it elsewhere in this or other documents.',
-    'A description of the policy (desired state) including information about its purpose and scope.',
-    'A textual label that uniquely identifies the parameter associated with that policy (desired state) or controls implemented by the policy (desired state).',
-    'A description of the parameter including the purpose and use of the parameter.',
-    'ONLY for the policy (desired state) parameters: A value or set of values the parameter can take. The catalog parameters values are defined in the catalog. ',
-    'A value recommended by Compliance Team in this profile for the parameter of the control or policy (desired state). If a CIS-benchmark exists, the default default could be the CIS-benchmark recommended value.',
-    'A URL reference to the source catalog or profile for which this component is implementing controls for. A profile designates a selection and configuration of controls from one or more catalogs.',
-    'A description of the profile.',
-    'A list of textual labels that uniquely identify the controls or statements that the component implements.',
-    'A textual label that uniquely identifies a check of the policy (desired state) that can be used to reference it elsewhere in this or other documents.',
-    'A description of the check of the policy (desired state) including the method (interview or examine or test) and procedure details.',
-    'A namespace qualifying the property name. This allows different organizations to associate distinct semantics with the same name. Used in conjunction with "class" as the ontology concept. ',
+    'A human readable name for the component.',  # noqa: E501
+    'A description of the component including information about its function.',  # noqa: E501
+    'A category describing the purpose of the component. ALLOWED VALUES interconnection:software:hardware:service:physical:process-procedure:plan:guidance:standard:validation',  # noqa: E501
+    'A textual label that uniquely identifies a policy (desired state) that can be used to reference it elsewhere in this or other documents.',  # noqa: E501
+    'A description of the policy (desired state) including information about its purpose and scope.',  # noqa: E501
+    'A textual label that uniquely identifies the parameter associated with that policy (desired state) or controls implemented by the policy (desired state).',  # noqa: E501
+    'A description of the parameter including the purpose and use of the parameter.',  # noqa: E501
+    'ONLY for the policy (desired state) parameters: A value or set of values the parameter can take. The catalog parameters values are defined in the catalog. ',  # noqa: E501
+    'A value recommended by Compliance Team in this profile for the parameter of the control or policy (desired state). If a CIS-benchmark exists, the default default could be the CIS-benchmark recommended value.',  # noqa: E501
+    'A URL reference to the source catalog or profile for which this component is implementing controls for. A profile designates a selection and configuration of controls from one or more catalogs.',  # noqa: E501
+    'A description of the profile.',  # noqa: E501
+    'A list of textual labels that uniquely identify the controls or statements that the component implements.',  # noqa: E501
+    'A textual label that uniquely identifies a check of the policy (desired state) that can be used to reference it elsewhere in this or other documents.',  # noqa: E501
+    'A description of the check of the policy (desired state) including the method (interview or examine or test) and procedure details.',  # noqa: E501
+    'A namespace qualifying the property name. This allows different organizations to associate distinct semantics with the same name. Used in conjunction with "class" as the ontology concept. ',  # noqa: E501
 ]
 
 service_component_title = 'OCP4'
@@ -78,7 +78,7 @@ check_prefix = ''
 check_prefix_help = 'None'
 
 default_namespace = 'http://ibm.github.io/compliance-trestle/schemas/oscal/cd'
-#default_namespace = 'http://ibm.github.io/compliance-trestle/schemas/oscal/cd/pvp/ocp'
+pvp_ocp_namespace = 'http://ibm.github.io/compliance-trestle/schemas/oscal/cd/pvp/ocp'
 default_rule2parameter_map = 'None'
 
 
@@ -200,10 +200,11 @@ class Mainline:
         for key in self._rule_to_parm_map.keys():
             if key == rule:
                 value = self._rule_to_parm_map[key]
-                remarks = value['description']
+                id_ = value['id']
+                description = value['description']
                 options = value['options']
                 default_value = options['default']
-                set_parameter = (f'var_{rule}', remarks, default_value, options)
+                set_parameter = (f'{id_}', description, default_value, options)
         return set_parameter
 
     def _run(self) -> None:
