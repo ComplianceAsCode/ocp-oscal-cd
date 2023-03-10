@@ -84,6 +84,8 @@ Note: a warning is given for those parameters not linked to any rule
 ##### 6. create ocp4.csv
 
 ```
+(venv.ocp4) degenaro:ocp-oscal-cd$ cp -p ../content/products/ocp4/profiles/cis.profile data/cis-benchmarks/
+(venv.ocp4) degenaro:ocp-oscal-cd$ cp -p ../content/products/ocp4/profiles/cis-node.profile data/cis-benchmarks/
 (venv.ocp4) degenaro:ocp-oscal-cd$ python scripts/ocp4_cis_profile_to_csv.py --input data/cis-benchmarks/cis-node.profile profiles/OCP4_CIS_NODE/profile.json "OCP4 CIS Node Profile" --input data/cis-benchmarks/cis.profile profiles/OCP4_CIS/profile.json "OCP4 CIS Profile" --check-prefix xccdf_org.ssgproject.content_rule_ --catalog catalogs/ocp4-cis/catalog.json --rule-to-parameters-map data/rule2var.json --output data/
 ```
 
