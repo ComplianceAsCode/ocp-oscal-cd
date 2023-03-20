@@ -1,18 +1,22 @@
 #!/bin/bash
 
 export COMMIT_TITLE="chore: Component definitions automatic update."
-export COMMIT_BODY="Sync profiles with ocp-oscal-cd repo"
+export COMMIT_BODY="Sync components with ocp-oscal-cd repo"
 git config --global user.email "automation@example.com"
 git config --global user.name "AutomationBot" 
 cd ocp-oscal-ssp
 git checkout -b "cd_autoupdate_$GITHUB_RUN_ID"
 cp -r ../catalogs .
 cp -r ../profiles . 
+cp -r ../component-definitions .
+ 
 if [ -z "$(git status --porcelain)" ]; then 
   echo "Nothing to commit" 
 else 
   git diff
   git add component-definitions
+  git add profiles
+  git add catalogs  
   if [ -z "$(git status --untracked-files=no --porcelain)" ]; then 
      echo "Nothing to commit" 
   else
