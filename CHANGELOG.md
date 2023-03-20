@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2023-03-20)
+### Feature
+* Update pr script ([`b46ce12`](https://github.com/ComplianceAsCode/ocp-oscal-cd/commit/b46ce1215617d03193c404de9ec1d91d97f3f3ae))
+* Push changes to ssp ([`aded5d8`](https://github.com/ComplianceAsCode/ocp-oscal-cd/commit/aded5d8c554bdebf3b76f3198a6608d3a13e2232))
+
+### Fix
+* Update ssp ([`f2cf575`](https://github.com/ComplianceAsCode/ocp-oscal-cd/commit/f2cf5757076e2d7d663db8e4d23c59512384cc03))
+* Ignore dangling rules ([`54cac7e`](https://github.com/ComplianceAsCode/ocp-oscal-cd/commit/54cac7e072ad52b4a00f9d0858ec12367fded4e8))
+
 ## v0.2.0 (2023-02-16)
 ### Feature
 * Updated profiles ([#14](https://github.com/ComplianceAsCode/ocp-oscal-cd/issues/14)) ([`9a1106a`](https://github.com/ComplianceAsCode/ocp-oscal-cd/commit/9a1106ad1958a23f81b213fc3871a3e479ec449c))

@@ -3,8 +3,8 @@
     "uuid": "27ef2ee1-26c1-436e-ae94-0546b961ff06",
     "metadata": {
       "title": "Component definition for CIS Red Hat OpenShift Container Platform 4 Benchmark profiles",
-      "last-modified": "2023-02-16T13:42:29.006200+00:00",
-      "version": "0.2.0",
+      "last-modified": "2023-03-20T01:29:17.073655+00:00",
+      "version": "0.3.0",
       "oscal-version": "1.0.2"
     },
     "components": [
