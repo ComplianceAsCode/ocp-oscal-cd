@@ -23,6 +23,28 @@ jobs:
       run: source scripts/automation/release.sh
     - name: Push the changes
       run: bash scripts/automation/push.sh
+  downstream-repo-update-ssp:
+    name: Update downstream repository - ssp
+    runs-on: ubuntu-latest
+    needs: release
+    steps:
+    - name: Clone branch
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        ref: main
+        token: ${{ secrets.GIT_TOKEN }}
+    - name: Clone downstream repo
+      uses: actions/checkout@v2
+      with:
+        repository: ComplianceAsCode/ocp-oscal-ssp
+        path: './ocp-oscal-ssp'
+        token: ${{ secrets.GIT_TOKEN }}
+        fetch-depth: 0
+    - name: Update ssp
+      run: bash scripts/automation/update_ssp.sh
+      env:
+        GH_TOKEN: ${{ secrets.GIT_TOKEN }}
   merge-main-to-develop:
     name: Merge main to develop
     runs-on: ubuntu-latest
